@@ -34,7 +34,7 @@ const Contact = () => {
 				<div className="content-wrapper">
 					<div className="contact-container">
 						<div className="title contact-title">
-							You wanna reach out? Me too!
+							You wanna get in touch? Me too!
 						</div>
 
 						<div className="subtitle contact-subtitle">
@@ -61,9 +61,9 @@ const Contact = () => {
 								{"@"}
 								{INFO.socials.instagram.split("/").reverse()[0]}
 							</a>
-							, I do post stuff quite frequently and you can
-							always send me DM. Thanks again for your interest,
-							and I look forward to hearing from you!
+							, I do post stuff quite regularly and you can always
+							send me DM. Thanks again for your interest, and I
+							look forward to hearing from you!
 						</div>
 
 						<div className="contact-main">

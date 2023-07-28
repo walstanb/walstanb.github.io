@@ -92,6 +92,9 @@
 	.project {
 		height: 450px;
 	}
+	.project-container {
+		padding: 0 15px 30px;
+	}
 
 	.project-description,
 	.project-link {

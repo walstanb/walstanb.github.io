@@ -39,6 +39,10 @@
 	width: 370px;
 }
 
+.homepage-image {
+	border-radius: 10%;
+}
+
 .homepage-image-wrapper {
 	overflow: hidden;
 	border-radius: 10%;
@@ -93,17 +97,15 @@
 
 @media (max-width: 1024px) {
 	.homepage-container {
-		margin-top: 100px;
+		margin-top: 90px;
 	}
 
 	.homepage-image-wrapper {
-		overflow: hidden;
-		border-radius: 10%;
 		transform: rotate(0deg);
 	}
 
 	.homepage-image-container {
-		width: 80%;
+		width: 90%;
 	}
 
 	.homepage-first-area {
@@ -159,8 +161,7 @@
 
 	.homepage-works {
 		flex-basis: auto;
-		margin-left: -10px;
-		margin-right: -10px;
+		margin: 0 -5px;
 	}
 
 	.homepage-articles {

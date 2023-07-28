@@ -25,7 +25,7 @@
 
 .work-details {
 	display: flex;
-	padding-left: 20px;
+	padding-left: 1%;
 }
 
 .work-title {
@@ -103,10 +103,6 @@
 	}
 	.work-title {
 		margin-left: 28px;
-	}
-
-	.work-details {
-		padding-left: 15px;
 	}
 }
 

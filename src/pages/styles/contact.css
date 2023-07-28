@@ -1,6 +1,6 @@
 @import "../../data/styles.css";
 
-.dark-mode a {
+.dark-mode .subtitle a {
 	color: var(--link-color);
 }
 
@@ -59,7 +59,7 @@
 
 @media (max-width: 1024px) {
 	.contact-container {
-		margin-top: 100px;
+		margin-top: 90px;
 	}
 
 	.contact-main {
