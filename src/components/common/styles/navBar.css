@@ -59,7 +59,7 @@
 	.navbar {
 		margin-left: 25%;
 		margin-right: 25%;
-		width: 80%;
+		min-width: 320px;
 		font-size: 80%;
 	}
 

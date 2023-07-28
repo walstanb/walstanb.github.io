@@ -16,37 +16,63 @@ const Works = () => {
 				body={
 					<div className="works-body">
 						{INFO.experience.map((experience, index) => (
-              <div className="work" key={index}>
-                <img
-                    src={experience.company_logo}
-                    alt={experience.company}
-                    className="work-image"
-                  />
-                <div className="work-details">
+							<div className="work" key={index}>
+								<div className="work-details">
+									<img
+										src={experience.company_logo}
+										alt={experience.company}
+										className="work-image"
+									/>
 									<div className="work-title">
 										{experience.company}
 									</div>
-                <div className="work-roles">
-                {experience.roles.map((role, roleIndex) => (
-                  <div className="work-role" key={roleIndex}>
-                    <div className="work-subtitle">{role.role}</div>
-                    <div className="work-duration">{role.duration}</div>
-                    <div className="work-description">
-                      <ul>
-                        {role.description.split("\n").map((point, idx) => (
-                          <li key={idx}>{point}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                ))}
-                    </div>
-                  </div>
+									<div className="work-roles">
+										{experience.roles.map(
+											(role, roleIndex) => (
+												<div
+													className="work-role"
+													key={roleIndex}
+												>
+													<div className="work-subtitle">
+														{role.role}
+													</div>
+													<div className="work-duration">
+														{role.duration}
+													</div>
+													<div className="work-description">
+														<ul>
+															{role.description
+																.split("\n")
+																.map(
+																	(
+																		point,
+																		idx
+																	) => (
+																		<li
+																			key={
+																				idx
+																			}
+																		>
+																			{
+																				point
+																			}
+																		</li>
+																	)
+																)}
+														</ul>
+													</div>
+												</div>
+											)
+										)}
+									</div>
+								</div>
 							</div>
 						))}
 						<button
 							className="access-resume-button"
-							onClick={() => window.open(INFO.about.resume, '_blank')}
+							onClick={() =>
+								window.open(INFO.about.resume, "_blank")
+							}
 						>
 							Resume
 						</button>

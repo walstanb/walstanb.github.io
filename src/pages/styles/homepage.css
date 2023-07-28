@@ -77,7 +77,7 @@
 }
 
 .homepage-articles {
-	flex-basis: 900px;
+	flex-basis: 70%;
 	padding-top: 30px;
 	margin-left: -30px;
 }
@@ -132,7 +132,7 @@
 
 	.homepage-first-area-right-side {
 		justify-content: space-around;
-		width: 100%;
+		width: 90%;
 		order: 1;
 	}
 
@@ -165,5 +165,11 @@
 
 	.homepage-articles {
 		padding: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.homepage-first-area-right-side {
+		width: 100%;
 	}
 }

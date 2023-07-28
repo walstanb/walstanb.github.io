@@ -115,9 +115,11 @@
 
 	.title {
 		width: 100%;
+		font-size: 35px;
 	}
 
 	.subtitle {
 		width: 100%;
+		font-size: 14px;
 	}
 }
