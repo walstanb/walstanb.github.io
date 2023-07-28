@@ -1,3 +1,9 @@
+@import "../../data/styles.css";
+
+.dark-mode a {
+	color: var(--link-color);
+}
+
 .contact-logo-container {
 	display: flex;
 	justify-content: left;
