@@ -57,7 +57,6 @@
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	padding-top: 30px;
 }
 
 .homepage-social-icon {
@@ -95,6 +94,10 @@
 	padding-top: 30px;
 }
 
+.homepage-subtitle {
+	min-height: 300px;
+}
+
 @media (max-width: 1024px) {
 	.homepage-container {
 		margin-top: 90px;
@@ -130,6 +133,7 @@
 		width: 100% !important;
 		margin-top: 10px;
 		order: 3;
+		min-height: unset;
 	}
 
 	.homepage-first-area-right-side {
@@ -144,7 +148,8 @@
 
 	.homepage-socials {
 		width: 90%;
-		margin-left: 18px;
+		margin-left: 5%;
+		padding-top: 30px;
 	}
 
 	.homepage-after-title {
