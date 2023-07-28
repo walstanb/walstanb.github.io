@@ -1,0 +1,95 @@
+@import "../../../data/styles.css";
+
+.project {
+	mix-blend-mode: normal;
+	border-radius: 20px;
+	opacity: 0.8;
+	height: 100%;
+	transition: transform 0.5s ease-in-out;
+}
+
+.project a {
+	text-decoration: none;
+}
+
+.project:hover {
+	background: var(--background-secondary);
+	opacity: 1;
+	transition: background-color 0.3s ease-in-out;
+	transform: scale(1.07);
+}
+
+.project:hover .project-link {
+	color: var(--link-color);
+	transition: color 0.3s ease-in-out;
+}
+
+.project-container {
+	padding: 0 30px 30px;
+}
+
+.project-image img {
+	width: 100%;
+	height: 180px; /* Adjust the height to your desired fixed size */
+	object-fit: cover;
+	object-position: center;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.project-logo {
+	width: 30px;
+}
+
+.project-logo img {
+	width: 100%;
+}
+
+.project-title {
+	font-family: var(--secondary-font);
+	color: var(--primary-color);
+	font-size: 16px;
+	padding-top: 15px;
+	margin-bottom: 1em;
+	font-weight: 700;
+}
+
+.project-description {
+	color: var(--secondary-color);
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+
+.project-link {
+	display: flex;
+	align-items: center;
+	color: var(--secondary-color);
+	font-size: 12px;
+	padding-top: 20px;
+}
+
+.project-link-icon {
+	padding-left: 5px;
+	font-size: 13px;
+}
+
+.project-link-text {
+	padding-left: 12px;
+	font-weight: 700;
+}
+
+.project-skill-badges {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.project-skill {
+	padding-right: 5px;
+}
+
+@media (max-width: 600px) {
+	.project {
+		height: 300px;
+	}
+}

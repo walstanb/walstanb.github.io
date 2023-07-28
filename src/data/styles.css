@@ -1,0 +1,46 @@
+body {
+	min-height: 100vh;
+}
+
+:root {
+	/* ------- colors ------- */
+	--primary-color: #27272a;
+	--secondary-color: #383636;
+	--tertiary-color: #acacb4;
+	--quaternary-color: #e4e4e7;
+	--outline-color: #f0f0f0;
+	--link-color: #00b4d8;
+	/* ---------------------- */
+
+	/* ------- fonts ------- */
+	--primary-font: "Heebo", sans-serif;
+	--secondary-font: "Roboto", sans-serif;
+
+	/* --------------------- */
+}
+
+/* Light mode styles */
+.light-mode {
+	/* Override the CSS variables for light mode */
+	--background-color: #f1f1f1;
+	--content-background-color: white;
+	--background-secondary: #f2f2f2;
+	--primary-color: #27272a;
+	--secondary-color: #383636;
+	--tertiary-color: #acacb4;
+	--outline-color: #f0f0f0;
+	--link-color: #00b4d8;
+}
+
+/* Dark mode styles */
+.dark-mode {
+	/* Override the CSS variables for dark mode */
+	--background-color: #111111;
+	--background-secondary: #2a2a2a;
+	--content-background-color: #0e0e0e;
+	--primary-color: white;
+	--secondary-color: #f8f8f8;
+	--tertiary-color: #868686;
+	--outline-color: #787878;
+	--link-color: #84dbf0;
+}

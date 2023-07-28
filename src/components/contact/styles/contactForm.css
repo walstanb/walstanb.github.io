@@ -1,0 +1,76 @@
+/* contactForm.css */
+@import "../../../data/styles.css";
+
+.form-wrapper {
+	max-width: 400px;
+	padding: 0px 20px 20px 0px;
+	border-radius: 5px;
+}
+
+.form-title {
+	font-family: var(--primary-font);
+	color: var(--primary-color);
+	font-size: 25px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.form-subtitle {
+	color: var(--primary-color);
+}
+
+.contact-name,
+.contact-email,
+.contact-message {
+	font-family: var(--primary-font);
+	background-color: var(--secondary-background);
+	color: var(--primary-color);
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid var(--outline-color);
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.contact-name input,
+.contact-email input,
+.contact-message input {
+	color: aqua;
+}
+
+.contact-message {
+	resize: vertical;
+	min-height: 100px;
+}
+
+.contact-send-button {
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+	outline: 2px solid var(--outline-color);
+	background-color: var(--context-background-color);
+	color: var(--primary-color);
+	border: none;
+	padding: 10px 15px;
+	border-radius: 30px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.contact-send-button:hover {
+	outline-color: var(--link-color);
+	color: var(--link-color);
+	transition: outline-color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
+}
+
+/* Response Message Styles */
+.text-2xl {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.text-md {
+	font-size: 16px;
+	color: #666;
+}

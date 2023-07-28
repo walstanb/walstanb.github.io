@@ -1,0 +1,95 @@
+@import "../../../data/styles.css";
+
+.works-body {
+	position: relative;
+	margin-bottom: 20px;
+	top: -10px;
+}
+
+.work {
+	display: flex;
+	padding-bottom: 15px;
+	width: 400px;
+}
+
+.work-header {
+	display: flex;
+}
+
+.work-image {
+	height: 38px;
+	width: 38px;
+	border-radius: 50%;
+	/* outline: 6px solid var(--primary-color); */
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.work-title {
+	position: absolute;
+	font-size: 15px;
+	font-weight: 700;
+	padding-left: 20px;
+	color: var(--secondary-color);
+}
+
+.work-role {
+	padding-left: 20px;
+}
+
+.work-subtitle {
+	position: absolute;
+	font-size: 12px;
+	color: var(--secondary-color);
+	margin-top: -5px;
+}
+
+.work-duration {
+	position: absolute;
+	width: 100%;
+	font-size: 12px;
+	text-align: right;
+	color: var(--tertiary-color);
+	margin-top: -5px;
+	right: 10px;
+}
+
+.work-roles {
+	padding-top: 12px;
+}
+
+.work-description ul {
+	list-style-type: disc; /* You can change to 'circle' or 'square' if you prefer different bullet styles */
+	margin-left: 20px;
+	padding-left: 0;
+	padding-top: 15px; /* Remove default padding for the ul element */
+}
+
+.work-description li {
+	font-size: 12px;
+	color: var(--tertiary-color);
+	padding-left: 5px; /* Adjust space between bullet point and text */
+}
+
+.access-resume-button {
+	position: absolute;
+	bottom: -25px;
+	right: -10px;
+	outline: 2px solid var(--outline-color);
+	background-color: var(--context-background-color);
+	color: var(--primary-color);
+	border: none;
+	padding: 10px 15px;
+	border-radius: 30px;
+	font-size: 14px;
+	cursor: pointer;
+	/* box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25); */
+}
+
+.access-resume-button:hover {
+	outline-color: var(--link-color);
+	color: var(--link-color);
+	transition: outline-color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
+}
+
+/* Existing CSS... */
