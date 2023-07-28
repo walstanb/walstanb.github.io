@@ -4,6 +4,7 @@
 body {
 	margin: 0;
 	font-family: var(--primary-font);
+	background-color: var(--background-color);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
