@@ -40,7 +40,9 @@ const About = () => {
 								</div>
 
 								<div className="subtitle about-subtitle">
-									{INFO.about.description.split("\n")[0]}
+									<div className="about-subtitle-text">
+										{INFO.about.description.split("\n")[0]}
+									</div>
 									<ul>
 										{INFO.about.description
 											.split("\n")

@@ -3,6 +3,7 @@
 
 body {
 	margin: 0;
+	min-height: 100vh;
 	font-family: var(--primary-font);
 	background-color: var(--background-color);
 	-webkit-font-smoothing: antialiased;

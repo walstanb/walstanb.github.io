@@ -40,7 +40,7 @@ const INFO = {
 			"Throughout my journey as a developer, I've taken on numerous projects, each of which has contributed to my growth and expertise. What's even more exciting is that a substantial portion of my projects are open-source, providing an excellent opportunity for collaboration and knowledge sharing. I'd be delighted if you could check out these projects and explore the codebase providing your insights and suggestions. I'm always up for a challenge, so if you have a project you want to bring to life, let's make it happen! ",
 		project_list: [
 			{
-				title: "Study on the influence of the field-of-view on the precision of Monocular Visual SLAM",
+				title: "Impact of field-of-view on Monocular Visual SLAM accuracy.",
 				description:
 					"Investigated the impact of camera resolution and field of view on MonoSLAM's precision, providing recommendations for optimal selection in various applications.",
 				image: "https://galeetch.com/images/portfolio/perception_gif.gif",
@@ -131,7 +131,7 @@ const INFO = {
 						"Software tools for formal verification.\nRobustness analysis for python-based Psy-TaLiRo.\nSetup scalable Archcomp automation solution.",
 				},
 				{
-					role: "Application Developer, Solar Canoe",
+					role: "Application Developer",
 					duration: "May 2022 - Aug 2022",
 					description:
 						"Redesigned SCAD web app with team.\nIntegrated Stripe for secure transactions.\nDeveloped automated dispatch system with Celery.\nImplemented real-time location tracking with Flask-SocketIO.",
@@ -144,7 +144,7 @@ const INFO = {
 			company: "Resilient Tech",
 			roles: [
 				{
-					role: "Full Stack Software Engineer - Python",
+					role: "Full Stack Software Engineer",
 					duration: "Oct 2020 - Aug 2021",
 					description:
 						"Contributed 60+ GitHub PRs, fixing 80+ issues.\nIntegrated Frappe ERPNext with 15+ systems.\nLed 3-member team, migrated apps to AWS/GCP.\nImproved scalability, decreased downtime by 10%.\nCommunicated with clients, provided status updates.",

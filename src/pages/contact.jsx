@@ -65,20 +65,19 @@ const Contact = () => {
 							always send me DM. Thanks again for your interest,
 							and I look forward to hearing from you!
 						</div>
-					</div>
 
-					<div className="contact-main">
-						<div className="contact-form">
-							<ContactForm />
-						</div>
+						<div className="contact-main">
+							<div className="contact-form">
+								<ContactForm />
+							</div>
 
-						<div className="socials-container">
-							<div className="contact-socials">
-								<Socials />
+							<div className="socials-container">
+								<div className="contact-socials">
+									<Socials />
+								</div>
 							</div>
 						</div>
 					</div>
-
 					<div className="page-footer">
 						<Footer />
 					</div>

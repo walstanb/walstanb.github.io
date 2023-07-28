@@ -29,7 +29,7 @@
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	width: calc((100% - 1350px) / 2);
+	width: calc((100% - 1200px) / 2);
 	background-color: var(--background-color);
 }
 
