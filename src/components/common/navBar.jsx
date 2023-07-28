@@ -5,9 +5,7 @@ import "./styles/darkModeSwitch.css";
 
 import "./styles/navBar.css";
 
-const NavBar = (props) => {
-	const { active } = props;
-
+const NavBar = ({ active }) => {
 	return (
 		<React.Fragment>
 			<div className="nav-container">
@@ -16,7 +14,7 @@ const NavBar = (props) => {
 						<ul className="nav-list">
 							<li
 								className={
-									active === "home"
+									active === "/"
 										? "nav-item active"
 										: "nav-item"
 								}
@@ -25,7 +23,7 @@ const NavBar = (props) => {
 							</li>
 							<li
 								className={
-									active === "about"
+									active === "/about"
 										? "nav-item active"
 										: "nav-item"
 								}
@@ -34,7 +32,7 @@ const NavBar = (props) => {
 							</li>
 							<li
 								className={
-									active === "projects"
+									active === "/projects"
 										? "nav-item active"
 										: "nav-item"
 								}
@@ -43,14 +41,14 @@ const NavBar = (props) => {
 							</li>
 							<li
 								className={
-									active === "contact"
+									active === "/contact"
 										? "nav-item active"
 										: "nav-item"
 								}
 							>
 								<Link to="/contact">Contact</Link>
 							</li>
-							<li>						
+							<li>
 								<div className="dark-mode-switch">
 									<DarkModeSwitch />
 								</div>
