@@ -2,12 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import DarkModeSwitch from "./darkModeSwitch";
 import "./styles/darkModeSwitch.css";
-import ReactGA from "react-ga";
 
 import "./styles/navBar.css";
 
 const NavBar = ({ active }) => {
-	ReactGA.pageview(active);
 	return (
 		<React.Fragment>
 			<div className="nav-container">

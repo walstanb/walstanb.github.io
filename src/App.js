@@ -13,14 +13,15 @@ import NavBar from "./components/common/navBar.jsx";
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
 
+// Initialize Google Analytics
+ReactGA.initialize(TRACKING_ID);
+
 function App() {
 	const location = useLocation();
 	useEffect(() => {
-		if (TRACKING_ID !== "") {
-			ReactGA.initialize(TRACKING_ID);
-		}
-		ReactGA.pageview(window.location.pathname + window.location.search);
-	}, []);
+		// Track page view on route change
+		ReactGA.send({ hitType: "pageview", page: location.pathname });
+	}, [location.pathname]);
 
 	return (
 		<ThemeProvider>
