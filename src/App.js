@@ -14,7 +14,9 @@ import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
 
 // Initialize Google Analytics
-ReactGA.initialize(TRACKING_ID);
+if (TRACKING_ID) {
+	ReactGA.initialize(TRACKING_ID);
+}
 
 function App() {
 	const location = useLocation();

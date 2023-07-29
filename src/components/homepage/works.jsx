@@ -1,6 +1,6 @@
 import React from "react";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-
+import { trackAction } from "../common/analytics";
 import Card from "../common/card";
 import INFO from "../../data/user";
 
@@ -70,9 +70,14 @@ const Works = () => {
 						))}
 						<button
 							className="access-resume-button"
-							onClick={() =>
-								window.open(INFO.about.resume, "_blank")
-							}
+							onClick={() => {
+								trackAction(
+									"Resume",
+									"Downloaded Resume",
+									"Resume"
+								);
+								window.open(INFO.about.resume, "_blank");
+							}}
 						>
 							Resume
 						</button>

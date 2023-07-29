@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { trackAction } from "../common/analytics";
 
 import "./styles/contactForm.css";
 
@@ -13,7 +14,7 @@ const ContactForm = () => {
 
 		// Anything you need to inject dynamically
 		const injectedData = {
-			DYNAMIC_DATA_EXAMPLE: 123,
+			TIME: new Date().toISOString(),
 		};
 		const inputs = e.target.elements;
 		const data = {};
@@ -102,7 +103,17 @@ const ContactForm = () => {
 					/>
 				</div>
 				<div className="mb-3 pt-0">
-					<button className="contact-send-button" type="submit">
+					<button
+						className="contact-send-button"
+						type="submit"
+						onClick={() =>
+							trackAction(
+								"Contact Form",
+								"Clicked",
+								"Send message"
+							)
+						}
+					>
 						Send message
 					</button>
 				</div>

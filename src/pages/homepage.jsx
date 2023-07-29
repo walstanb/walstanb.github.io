@@ -19,6 +19,7 @@ import AllProjects from "../components/projects/allProjects";
 import INFO from "../data/user";
 import SEO from "../data/seo";
 import myArticles from "../data/articles";
+import { trackAction } from "../components/common/analytics";
 
 import "./styles/homepage.css";
 
@@ -71,6 +72,13 @@ const Homepage = () => {
 							href={INFO.socials.medium}
 							target="_blank"
 							rel="noreferrer"
+							onClick={() =>
+								trackAction(
+									"Socials",
+									"Clicked",
+									"Homepage Medium"
+								)
+							}
 						>
 							<FontAwesomeIcon
 								icon={faMedium}
@@ -81,6 +89,13 @@ const Homepage = () => {
 							href={INFO.socials.github}
 							target="_blank"
 							rel="noreferrer"
+							onClick={() =>
+								trackAction(
+									"Socials",
+									"Clicked",
+									"Homepage GitHub"
+								)
+							}
 						>
 							<FontAwesomeIcon
 								icon={faGithub}
@@ -91,6 +106,13 @@ const Homepage = () => {
 							href={INFO.socials.linkedin}
 							target="_blank"
 							rel="noreferrer"
+							onClick={() =>
+								trackAction(
+									"Socials",
+									"Clicked",
+									"Homepage LinkedIn"
+								)
+							}
 						>
 							<FontAwesomeIcon
 								icon={faLinkedin}
@@ -101,6 +123,13 @@ const Homepage = () => {
 							href={INFO.socials.instagram}
 							target="_blank"
 							rel="noreferrer"
+							onClick={() =>
+								trackAction(
+									"Socials",
+									"Clicked",
+									"Homepage Instagram"
+								)
+							}
 						>
 							<FontAwesomeIcon
 								icon={faInstagram}
@@ -111,6 +140,13 @@ const Homepage = () => {
 							href={`mailto:${INFO.main.email}`}
 							target="_blank"
 							rel="noreferrer"
+							onClick={() =>
+								trackAction(
+									"Socials",
+									"Clicked",
+									"Homepage Email"
+								)
+							}
 						>
 							<FontAwesomeIcon
 								icon={faEnvelope}
