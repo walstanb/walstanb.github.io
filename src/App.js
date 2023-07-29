@@ -19,6 +19,7 @@ function App() {
 		if (TRACKING_ID !== "") {
 			ReactGA.initialize(TRACKING_ID);
 		}
+		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
 
 	return (

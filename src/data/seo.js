@@ -2,36 +2,57 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"I'm Walstan, a software engineer who loves creating efficient and reliable solutions to complex problems. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
+		keywords: [
+			"Walstan",
+			"Walstan B",
+			"Walstan Baptista",
+			"Walstan github",
+			"Walstan github.io",
+		],
 	},
 
 	{
 		page: "about",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
-	},
-
-	{
-		page: "articles",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Software Engineer with experience delivering efficient, scalable & reliable software solutions. Seeking opportunities as a dev/engineer in fields like Software Development, Automation, AI, and related areas.",
+		keywords: [
+			"Walstan",
+			"Walstan B",
+			"Walstan Baptista",
+			"Walstan github",
+			"Walstan github.io",
+		],
 	},
 
 	{
 		page: "projects",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Throughout my journey as a developer, I've taken on numerous projects, each of which has contributed to my growth and expertise. A substantial portion of these projects are open-source, providing an excellent opportunity for collaboration and knowledge sharing.",
+		keywords: [
+			"Walstan",
+			"Walstan B",
+			"Walstan Baptista",
+			"Walstan github",
+			"Walstan github.io",
+			"Walstan Baptista projects",
+			"Walstan project",
+		],
 	},
 
 	{
 		page: "contact",
 		description:
-			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"I'm always up for a challenge, so if you have a project you want to bring to life, let's make it happen!",
+		keywords: [
+			"Walstan",
+			"Walstan B",
+			"Walstan Baptista",
+			"Walstan github",
+			"Walstan github.io",
+			"Walstan Baptista contact",
+			"Walstan contact",
+		],
 	},
 ];
 
