@@ -85,9 +85,9 @@ const Works = () => {
 							className="works-button ghpr-button"
 							onClick={() => {
 								trackAction(
-									"Resume",
-									"Downloaded Resume",
-									"Resume"
+									"Github",
+									"Cliked Github Pull Requests",
+									"Github Pull Requests"
 								);
 								window.open(
 									"https://github.com/pulls?q=is%3Apr+author%3Awalstanb+archived%3Afalse+is%3Amerged+sort%3Acomments-desc+"

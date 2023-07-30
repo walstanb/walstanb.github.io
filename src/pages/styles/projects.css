@@ -20,8 +20,25 @@
 	margin-top: 120px;
 }
 
-.projects-list {
+.projects-buttons {
+	display: flex;
+	justify-content: left;
 	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.projects-button {
+	margin-right: 20px;
+	outline: 2px solid var(--link-color);
+	background-color: var(--context-background-color);
+	color: var(--link-color);
+	border: none;
+	padding: 10px 15px;
+	border-radius: 30px;
+	font-size: 14px;
+	cursor: pointer;
+	max-height: 35px;
+	overflow: hidden;
 }
 
 @media (max-width: 1024px) {
@@ -33,5 +50,9 @@
 @media (max-width: 600px) {
 	.projects-project {
 		width: calc(100% / 2);
+	}
+
+	.projects-button {
+		font-size: 12px;
 	}
 }
