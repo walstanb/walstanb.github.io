@@ -67,7 +67,7 @@
 }
 
 .homepage-social-icon:hover {
-	color: var(--primary-color);
+	color: var(--link-color);
 }
 
 .homepage-after-title {
@@ -96,6 +96,11 @@
 
 .homepage-subtitle {
 	min-height: 300px;
+}
+
+.homepage-subtitle span {
+	display: block;
+	padding-bottom: 30px;
 }
 
 @media (max-width: 1024px) {
@@ -138,7 +143,7 @@
 
 	.homepage-first-area-right-side {
 		justify-content: space-around;
-		width: 90%;
+		width: 65%;
 		order: 1;
 	}
 
@@ -149,7 +154,6 @@
 	.homepage-socials {
 		width: 90%;
 		margin-left: 5%;
-		padding-top: 30px;
 	}
 
 	.homepage-after-title {
@@ -177,5 +181,17 @@
 @media (max-width: 600px) {
 	.homepage-first-area-right-side {
 		width: 100%;
+	}
+}
+
+@media (max-width: 450px) {
+	.homepage-socials {
+		margin-top: -3%;
+	}
+	.homepage-socials a {
+		width: 15%;
+	}
+	.homepage-social-icon {
+		width: 50%;
 	}
 }

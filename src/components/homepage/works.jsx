@@ -69,7 +69,7 @@ const Works = () => {
 							</div>
 						))}
 						<button
-							className="access-resume-button"
+							className="works-button access-resume-button"
 							onClick={() => {
 								trackAction(
 									"Resume",
@@ -80,6 +80,21 @@ const Works = () => {
 							}}
 						>
 							Resume
+						</button>
+						<button
+							className="works-button ghpr-button"
+							onClick={() => {
+								trackAction(
+									"Resume",
+									"Downloaded Resume",
+									"Resume"
+								);
+								window.open(
+									"https://github.com/pulls?q=is%3Apr+author%3Awalstanb+archived%3Afalse+is%3Amerged+sort%3Acomments-desc+"
+								);
+							}}
+						>
+							GitHub Pull Requests
 						</button>
 					</div>
 				}

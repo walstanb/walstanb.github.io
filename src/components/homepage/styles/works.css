@@ -68,30 +68,40 @@
 
 .work-description li {
 	font-size: 12px;
-	color: var(--tertiary-color);
+	color: var(--secondary-color);
 	padding-left: 5px; /* Adjust space between bullet point and text */
 }
 
-.access-resume-button {
+.works-button {
 	position: absolute;
-	bottom: -25px;
-	right: -10px;
 	outline: 2px solid var(--outline-color);
 	background-color: var(--context-background-color);
-	color: var(--primary-color);
+	color: var(--secondary-color);
 	border: none;
 	padding: 10px 15px;
 	border-radius: 30px;
 	font-size: 14px;
 	cursor: pointer;
+	max-height: 35px;
+	overflow: hidden;
 	/* box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25); */
 }
 
-.access-resume-button:hover {
+.works-button:hover {
 	outline-color: var(--link-color);
 	color: var(--link-color);
 	transition: outline-color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
+}
+
+.access-resume-button {
+	bottom: -25px;
+	right: -10px;
+}
+
+.ghpr-button {
+	bottom: -25px;
+	right: 90px;
 }
 
 /* Existing CSS... */
@@ -134,6 +144,13 @@
 	.work-title {
 		padding-left: 5px;
 		padding-top: 2px;
+	}
+
+	.works-button {
+		transform: scale(0.9);
+	}
+	.ghpr-button {
+		right: 75px;
 	}
 }
 

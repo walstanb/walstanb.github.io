@@ -50,7 +50,7 @@ const Homepage = () => {
 							</div>
 
 							<div className="subtitle homepage-subtitle">
-								{INFO.homepage.description}
+								<span>{INFO.homepage.description}</span>
 							</div>
 						</div>
 
