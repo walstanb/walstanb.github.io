@@ -2,7 +2,7 @@ name: "Build, Test and Deploy to live-build"
 on:
     push:
         branches:
-            - src
+            - main
 
     workflow_dispatch:
 
@@ -30,10 +30,11 @@ jobs:
                   wait-on: "http://localhost:3000"
 
             - name: Deploy
+              if: ${{ !contains(github.event.head_commit.message, '--no-deploy') }}
               uses: crazy-max/ghaction-github-pages@v3
               with:
                   target_branch: live-build
                   build_dir: build
-                  commit_message: "Deployed: ${{ github.event.head_commit.message }}"
+                  commit_message: "${{ github.event.head_commit.message }}"
               env:
                   GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
