@@ -8,7 +8,7 @@ const INFO = {
 
 	socials: {
 		github: "https://github.com/walstanb",
-		linkedin: "https://linkedin.com/in/walstanb",
+		linkedin: "https://www.linkedin.com/in/walstanb",
 		instagram: "https://instagram.com/walstn",
 		medium: "https://walstanb.medium.com/",
 		discord: "https://discordapp.com/users/481185604252598300",

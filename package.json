@@ -62,5 +62,8 @@
 	"prettier": {
 		"useTabs": true,
 		"tabWidth": 4
+	},
+	"devDependencies": {
+		"cypress": "^12.17.2"
 	}
 }
