@@ -23,6 +23,7 @@ jobs:
               run: npm run build
 
             - name: Cypress Run Tests
+              if: ${{ !contains(github.event.head_commit.message, '--skip-tests') }}
               uses: cypress-io/github-action@v5
               with:
                   browser: chrome
