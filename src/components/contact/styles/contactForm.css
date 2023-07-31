@@ -22,6 +22,7 @@
 .contact-name,
 .contact-email,
 .contact-message {
+	outline-color: var(--link-color);
 	font-family: var(--primary-font);
 	background-color: var(--secondary-background);
 	color: var(--primary-color);
@@ -33,10 +34,14 @@
 	font-size: 16px;
 }
 
-.contact-name input,
-.contact-email input,
-.contact-message input {
-	color: aqua;
+.contact-name:hover,
+.contact-email:hover,
+.contact-message:hover,
+.contact-name:focus-visible,
+.contact-email:focus-visible,
+.contact-message:focus-visible {
+	outline-color: var(--link-color);
+	border: 1px solid var(--link-color);
 }
 
 .contact-message {
@@ -45,10 +50,9 @@
 }
 
 .contact-send-button {
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 	outline: 2px solid var(--outline-color);
 	background-color: var(--context-background-color);
-	color: var(--primary-color);
+	color: var(--secondary-color);
 	border: none;
 	padding: 10px 15px;
 	border-radius: 30px;
