@@ -1,0 +1,19 @@
+name: E2E Cypress UI Tests
+on:
+    push:
+        branches:
+            - src
+
+jobs:
+    cypress-run:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Git Checkout
+              uses: actions/checkout@v3
+
+            - name: Cypress Run
+              uses: cypress-io/github-action@v5
+              with:
+                  browser: chrome
+                  start: npm run start
+                  wait-on: "http://localhost:3000"
