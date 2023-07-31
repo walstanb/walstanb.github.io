@@ -90,8 +90,8 @@ describe("Projects Page", () => {
 				url: link,
 				failOnStatusCode: false,
 			}).then((response) => {
-				Cypress.log({
-					name: link,
+				cy.task("log", {
+					href: link,
 					message: response.status,
 				});
 			});
