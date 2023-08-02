@@ -120,13 +120,13 @@ const INFO = {
 			roles: [
 				{
 					role: "Graduate Research Assistant",
-					duration: "Dec 2022 - Present",
+					duration: "Jan 2023 - Present",
 					description:
 						"Software tools for formal verification.\nRobustness analysis for python-based Psy-TaLiRo.\nSetup scalable Archcomp automation solution.",
 				},
 				{
 					role: "Application Developer",
-					duration: "May 2022 - Aug 2022",
+					duration: "May 2022 - Dec 2022",
 					description:
 						"Redesigned SCAD web app with team.\nIntegrated Stripe for secure transactions.\nDeveloped automated dispatch system with Celery.\nImplemented real-time location tracking with Flask-SocketIO.",
 				},
@@ -139,13 +139,13 @@ const INFO = {
 			roles: [
 				{
 					role: "Full Stack Software Engineer",
-					duration: "Oct 2020 - Aug 2021",
+					duration: "May 2020 - Aug 2021",
 					description:
 						"Contributed 60+ GitHub PRs, fixing 80+ issues.\nIntegrated Frappe ERPNext with 15+ systems.\nLed 3-member team, migrated apps to AWS/GCP.\nImproved scalability, decreased downtime by 10%.\nCommunicated with clients, provided status updates.",
 				},
 				{
 					role: "Software Engineer Intern",
-					duration: "May 2020 - Oct 2020",
+					duration: "Jan 2020 - May 2020",
 					description:
 						"Built 25+ forms, reports, and dashboards creatively.\nIntegrated Frappe with HTML, CSS, JavaScript seamlessly.\nAutomated processes, enhanced data accessibility, decision-making.",
 				},
