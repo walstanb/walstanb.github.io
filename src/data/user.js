@@ -128,7 +128,7 @@ const INFO = {
 					role: "Application Developer",
 					duration: "May 2022 - Dec 2022",
 					description:
-						"Redesigned SCAD web app with team.\nIntegrated Stripe for secure transactions.\nDeveloped automated dispatch system with Celery.\nImplemented real-time location tracking with Flask-SocketIO.",
+						"Redesigned SCAD web app with team.\nIntegrated Stripe for secure transactions.\nIntroduced Infrastructure as Code (IaC) principles using Terraform\nImplemented real-time location tracking with Flask-SocketIO.",
 				},
 			],
 		},
