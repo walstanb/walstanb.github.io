@@ -69,10 +69,10 @@ const INFO = {
 				skills: [
 					"react",
 					"python",
+					"fastapi",
 					"javascript",
 					"mongodb",
 					"docker",
-					"kubernetes",
 				],
 				linkText: "View Project",
 				link: "https://github.com/walstanb/Webchat",

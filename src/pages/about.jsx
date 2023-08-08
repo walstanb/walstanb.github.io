@@ -3,7 +3,8 @@ import { Helmet } from "react-helmet";
 
 import Footer from "../components/common/footer";
 import Works from "../components/homepage/works";
-import Socials from "../components/about/socials";
+import skillBadges from "../data/skillBadges";
+import DOMPurify from "dompurify";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -16,6 +17,15 @@ const About = () => {
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "about");
+
+	skillBadges.categories_list.forEach((category) => {
+		const skills = skillBadges.categories[category];
+		skillBadges.categories[category].sanitizedSkills = skills.map(
+			(skill) => ({
+				__html: DOMPurify.sanitize(skillBadges[skill]),
+			})
+		);
+	});
 
 	return (
 		<React.Fragment>
@@ -48,6 +58,40 @@ const About = () => {
 										))}
 								</ul>
 							</div>
+							<div className="about-skills-mobile">
+								<div className="about-skills-title">
+									Tech Skills
+								</div>
+								<div className="about-skills-categories">
+									{skillBadges.categories_list.map(
+										(category, index) => (
+											<div
+												className="about-skills-category"
+												key={index}
+											>
+												<div className="about-skills-category-subtitle">
+													{category}:
+												</div>
+												<div className="about-skills">
+													{skillBadges.categories[
+														category
+													].sanitizedSkills.map(
+														(skill, index) => (
+															<div
+																className="about-skill"
+																key={index}
+																dangerouslySetInnerHTML={
+																	skill
+																}
+															></div>
+														)
+													)}
+												</div>
+											</div>
+										)
+									)}
+								</div>
+							</div>
 							<div className="about-works">
 								<Works />
 							</div>
@@ -64,13 +108,41 @@ const About = () => {
 								</div>
 							</div>
 
-							<div className="about-socials">
-								<Socials />
+							<div className="about-skills-container">
+								<div className="about-skills-title">
+									Tech Skills
+								</div>
+								<div className="about-skills-categories">
+									{skillBadges.categories_list.map(
+										(category, index) => (
+											<div
+												className="about-skills-category"
+												key={index}
+											>
+												<div className="about-skills-category-subtitle">
+													{category}:
+												</div>
+												<div className="about-skills">
+													{skillBadges.categories[
+														category
+													].sanitizedSkills.map(
+														(skill, index) => (
+															<div
+																className="about-skill"
+																key={index}
+																dangerouslySetInnerHTML={
+																	skill
+																}
+															></div>
+														)
+													)}
+												</div>
+											</div>
+										)
+									)}
+								</div>
 							</div>
 						</div>
-					</div>
-					<div className="about-socials-mobile">
-						<Socials />
 					</div>
 				</div>
 				<div className="page-footer">

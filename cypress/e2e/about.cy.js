@@ -62,11 +62,17 @@ describe("About Page", () => {
 		cy.get(".about-main .about-left-side .about-image-container img")
 			.should("have.attr", "src")
 			.should("include", "about.jpg");
-		cy.get(".about-main .about-left-side .about-socials").should("exist");
+
+		cy.get(".about-main .about-left-side .about-skills-container").should(
+			"exist"
+		);
 		cy.get(
-			".about-main .about-left-side .about-socials .socials .social"
-		).should("have.length", 4);
-		cy.get(".about-container .about-socials-mobile").should(
+			".about-main .about-left-side .about-skills-container .about-skills-categories .about-skills-category"
+		).should("have.length", 5);
+		cy.get(
+			".about-container .about-skills-mobile .about-skills-categories .about-skills-category"
+		).should("have.length", 5);
+		cy.get(".about-container .about-skills-mobile").should(
 			"have.css",
 			"display",
 			"none"
@@ -74,12 +80,12 @@ describe("About Page", () => {
 
 		cy.viewport("iphone-x");
 
-		cy.get(".about-main .about-left-side .about-socials").should(
+		cy.get(".about-main .about-left-side .about-skills-container").should(
 			"have.css",
 			"display",
 			"none"
 		);
-		cy.get(".about-container .about-socials-mobile").should(
+		cy.get(".about-container .about-skills-mobile").should(
 			"not.have.css",
 			"display",
 			"none"
