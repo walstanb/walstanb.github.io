@@ -21,6 +21,8 @@
 	background-color: var(--content-background-color);
 	position: relative;
 	min-height: 100vh;
+	margin-top: -120px;
+	padding-top: 120px;
 }
 
 .page-content:before,

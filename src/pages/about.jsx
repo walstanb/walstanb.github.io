@@ -37,116 +37,129 @@ const About = () => {
 					content={currentSEO.keywords.join(", ")}
 				/>
 			</Helmet>
-			<div className="content-wrapper">
-				<div className="about-container">
-					<div className="about-main">
-						<div className="about-right-side">
-							<div className="title about-title">
-								{INFO.about.title}
+			<div className="page-content">
+				<div className="content-wrapper page-2">
+					<div className="about-container">
+						<div className="about-main">
+							<div className="about-right-side">
+								<div className="title about-title">
+									{INFO.about.title}
+								</div>
+
+								<div className="subtitle about-subtitle">
+									<div className="about-subtitle-text">
+										{INFO.about.description.split("\n")[0]}
+									</div>
+									<ul>
+										{INFO.about.description
+											.split("\n")
+											.slice(1)
+											.map((point, idx) => (
+												<li key={idx}>{point}</li>
+											))}
+									</ul>
+								</div>
+								<div className="about-skills-mobile">
+									<div className="about-skills-title">
+										Tech Skills
+									</div>
+									<div className="about-skills-categories">
+										{skillBadges.categories_list.map(
+											(category, index) => (
+												<div
+													className="about-skills-category"
+													key={index}
+												>
+													<div className="about-skills-category-subtitle">
+														{category}:
+													</div>
+													<div className="about-skills">
+														{skillBadges.categories[
+															category
+														].sanitizedSkills.map(
+															(skill, index) => (
+																<div
+																	className="about-skill"
+																	key={index}
+																	dangerouslySetInnerHTML={
+																		skill
+																	}
+																></div>
+															)
+														)}
+													</div>
+												</div>
+											)
+										)}
+									</div>
+									<ul>
+										{INFO.about.description
+											.split("\n")
+											.slice(1)
+											.map((point, idx) => (
+												<li key={idx}>{point}</li>
+											))}
+									</ul>
+								</div>
+								<div className="about-works">
+									<Works />
+								</div>
+								<div className="about-works">
+									<Works />
+								</div>
 							</div>
 
-							<div className="subtitle about-subtitle">
-								<div className="about-subtitle-text">
-									{INFO.about.description.split("\n")[0]}
+							<div className="about-left-side">
+								<div className="about-image-container">
+									<div className="about-image-wrapper">
+										<img
+											src="about.jpg"
+											alt="about"
+											className="about-image"
+										/>
+									</div>
 								</div>
-								<ul>
-									{INFO.about.description
-										.split("\n")
-										.slice(1)
-										.map((point, idx) => (
-											<li key={idx}>{point}</li>
-										))}
-								</ul>
-							</div>
-							<div className="about-skills-mobile">
-								<div className="about-skills-title">
-									Tech Skills
-								</div>
-								<div className="about-skills-categories">
-									{skillBadges.categories_list.map(
-										(category, index) => (
-											<div
-												className="about-skills-category"
-												key={index}
-											>
-												<div className="about-skills-category-subtitle">
-													{category}:
-												</div>
-												<div className="about-skills">
-													{skillBadges.categories[
-														category
-													].sanitizedSkills.map(
-														(skill, index) => (
-															<div
-																className="about-skill"
-																key={index}
-																dangerouslySetInnerHTML={
-																	skill
-																}
-															></div>
-														)
-													)}
-												</div>
-											</div>
-										)
-									)}
-								</div>
-							</div>
-							<div className="about-works">
-								<Works />
-							</div>
-						</div>
 
-						<div className="about-left-side">
-							<div className="about-image-container">
-								<div className="about-image-wrapper">
-									<img
-										src="about.jpg"
-										alt="about"
-										className="about-image"
-									/>
-								</div>
-							</div>
-
-							<div className="about-skills-container">
-								<div className="about-skills-title">
-									Tech Skills
-								</div>
-								<div className="about-skills-categories">
-									{skillBadges.categories_list.map(
-										(category, index) => (
-											<div
-												className="about-skills-category"
-												key={index}
-											>
-												<div className="about-skills-category-subtitle">
-													{category}:
+								<div className="about-skills-container">
+									<div className="about-skills-title">
+										Tech Skills
+									</div>
+									<div className="about-skills-categories">
+										{skillBadges.categories_list.map(
+											(category, index) => (
+												<div
+													className="about-skills-category"
+													key={index}
+												>
+													<div className="about-skills-category-subtitle">
+														{category}:
+													</div>
+													<div className="about-skills">
+														{skillBadges.categories[
+															category
+														].sanitizedSkills.map(
+															(skill, index) => (
+																<div
+																	className="about-skill"
+																	key={index}
+																	dangerouslySetInnerHTML={
+																		skill
+																	}
+																></div>
+															)
+														)}
+													</div>
 												</div>
-												<div className="about-skills">
-													{skillBadges.categories[
-														category
-													].sanitizedSkills.map(
-														(skill, index) => (
-															<div
-																className="about-skill"
-																key={index}
-																dangerouslySetInnerHTML={
-																	skill
-																}
-															></div>
-														)
-													)}
-												</div>
-											</div>
-										)
-									)}
+											)
+										)}
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className="page-footer">
-					<Footer />
+					<div className="page-footer">
+						<Footer />
+					</div>
 				</div>
 			</div>
 		</React.Fragment>
