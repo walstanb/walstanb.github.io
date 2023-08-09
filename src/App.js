@@ -9,7 +9,6 @@ import About from "./pages/about";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";
-import NavBar from "./components/common/navBar.jsx";
 
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
