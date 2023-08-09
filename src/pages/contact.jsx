@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Socials from "../components/about/socials";
 import ContactForm from "../components/contact/contactForm";
@@ -28,59 +27,55 @@ const Contact = () => {
 					content={currentSEO.keywords.join(", ")}
 				/>
 			</Helmet>
+			<div className="content-wrapper page-4">
+				<div className="contact-container">
+					<div className="title contact-title">
+						You wanna get in touch? Me too!
+					</div>
 
-			<div className="page-content">
-				<NavBar active="contact" />
-				<div className="content-wrapper">
-					<div className="contact-container">
-						<div className="title contact-title">
-							You wanna get in touch? Me too!
+					<div className="subtitle contact-subtitle">
+						I'm glad that I got your attention. I'm open to any
+						feedback, questions or suggestions. If you'd like to
+						reach out to me directly, please feel free send an email
+						at{" "}
+						<a
+							href={`mailto:${INFO.main.email}`}
+							target="_blank"
+							rel="noreferrer"
+						>
+							{INFO.main.email}
+						</a>{" "}
+						or send me a message using the form below and I'll get
+						back to you as soon as possible. If you'd like to
+						connect on social media, and catch up with what I'm upto
+						you can find me on instagram{" "}
+						<a
+							href={INFO.socials.instagram}
+							target="_blank"
+							rel="noreferrer"
+						>
+							{"@"}
+							{INFO.socials.instagram.split("/").reverse()[0]}
+						</a>
+						, I do post stuff quite regularly and you can always
+						send me DM. Thanks again for your interest, and I look
+						forward to hearing from you!
+					</div>
+
+					<div className="contact-main">
+						<div className="contact-form">
+							<ContactForm />
 						</div>
 
-						<div className="subtitle contact-subtitle">
-							I'm glad that I got your attention. I'm open to any
-							feedback, questions or suggestions. If you'd like to
-							reach out to me directly, please feel free send an
-							email at{" "}
-							<a
-								href={`mailto:${INFO.main.email}`}
-								target="_blank"
-								rel="noreferrer"
-							>
-								{INFO.main.email}
-							</a>{" "}
-							or send me a message using the form below and I'll
-							get back to you as soon as possible. If you'd like
-							to connect on social media, and catch up with what
-							I'm upto you can find me on instagram{" "}
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								{"@"}
-								{INFO.socials.instagram.split("/").reverse()[0]}
-							</a>
-							, I do post stuff quite regularly and you can always
-							send me DM. Thanks again for your interest, and I
-							look forward to hearing from you!
-						</div>
-
-						<div className="contact-main">
-							<div className="contact-form">
-								<ContactForm />
-							</div>
-
-							<div className="socials-container">
-								<div className="contact-socials">
-									<Socials />
-								</div>
+						<div className="socials-container">
+							<div className="contact-socials">
+								<Socials />
 							</div>
 						</div>
 					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
+				</div>
+				<div className="page-footer">
+					<Footer />
 				</div>
 			</div>
 		</React.Fragment>
