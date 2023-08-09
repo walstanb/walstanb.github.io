@@ -92,23 +92,11 @@ const About = () => {
 											)
 										)}
 									</div>
-									<ul>
-										{INFO.about.description
-											.split("\n")
-											.slice(1)
-											.map((point, idx) => (
-												<li key={idx}>{point}</li>
-											))}
-									</ul>
-								</div>
-								<div className="about-works">
-									<Works />
 								</div>
 								<div className="about-works">
 									<Works />
 								</div>
 							</div>
-
 							<div className="about-left-side">
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
