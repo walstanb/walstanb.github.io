@@ -49,9 +49,8 @@ function App() {
 	const hideOtherPagesIfLoaded = (pageIndex) => {
 		Array.from(document.getElementsByClassName("content-wrapper")).forEach(
 			(element) => {
-				element.style.display = "none";
-				if (element.classList.contains(`page-${pageIndex}`)) {
-					element.style.display = "block";
+				if (!element.classList.contains(`page-${pageIndex}`)) {
+					fade(element);
 				}
 			}
 		);
@@ -64,6 +63,19 @@ function App() {
 			processQueue();
 		}
 		hideOtherPagesIfLoaded(pageIndex);
+	};
+
+	const fade = (element) => {
+		var op = 1; // initial opacity
+		var timer = setInterval(function () {
+			if (op <= 0.1) {
+				clearInterval(timer);
+				element.style.display = "none";
+			}
+			element.style.opacity = op;
+			element.style.filter = "alpha(opacity=" + op * 100 + ")";
+			op -= op * 0.1;
+		}, 50);
 	};
 
 	const processQueue = async () => {
@@ -80,21 +92,19 @@ function App() {
 	return (
 		<ThemeProvider>
 			<div className="App">
-				<div className="page-content">
-					<NavBar
-						onPageChange={enqueuePageTransition}
-						active={location.pathname}
-					/>
-					<PageTransition pageIndex={pageIndex}>
-						<Routes>
-							<Route path="/" element={<Homepage />} />
-							<Route path="/about" element={<About />} />
-							<Route path="/projects" element={<Projects />} />
-							<Route path="/contact" element={<Contact />} />
-							<Route path="*" element={<Notfound />} />
-						</Routes>
-					</PageTransition>
-				</div>
+				<NavBar
+					onPageChange={enqueuePageTransition}
+					active={location.pathname}
+				/>
+				<PageTransition pageIndex={pageIndex}>
+					<Routes>
+						<Route path="/" element={<Homepage />} />
+						<Route path="/about" element={<About />} />
+						<Route path="/projects" element={<Projects />} />
+						<Route path="/contact" element={<Contact />} />
+						<Route path="*" element={<Notfound />} />
+					</Routes>
+				</PageTransition>
 			</div>
 		</ThemeProvider>
 	);

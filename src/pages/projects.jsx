@@ -30,55 +30,57 @@ const Projects = () => {
 					content={currentSEO.keywords.join(", ")}
 				/>
 			</Helmet>
-			<div className="content-wrapper page-3">
-				<div className="projects-container">
-					<div className="title projects-title">
-						{INFO.projects.title}
-					</div>
+			<div className="page-content">
+				<div className="content-wrapper page-3">
+					<div className="projects-container">
+						<div className="title projects-title">
+							{INFO.projects.title}
+						</div>
 
-					<div className="subtitle projects-subtitle">
-						{INFO.projects.description}
-					</div>
+						<div className="subtitle projects-subtitle">
+							{INFO.projects.description}
+						</div>
 
-					<div className="projects-buttons">
-						<button
-							className="projects-button"
-							onClick={() => {
-								trackAction(
-									"Github",
-									"Cliked Github",
-									"Github"
-								);
-								window.open("https://github.com/walstanb");
-							}}
-						>
-							GitHub &nbsp;
-							<FontAwesomeIcon icon={faChevronRight} />
-						</button>
-						<button
-							className="projects-button"
-							onClick={() => {
-								trackAction(
-									"Github",
-									"Cliked Github Pull Requests",
-									"Github Pull Requests"
-								);
-								window.open(
-									"https://github.com/pulls?q=is%3Apr+author%3Awalstanb+archived%3Afalse+is%3Amerged+sort%3Acomments-desc+"
-								);
-							}}
-						>
-							GitHub Pull Requests &nbsp;
-							<FontAwesomeIcon icon={faChevronRight} />
-						</button>
-					</div>
+						<div className="projects-buttons">
+							<button
+								className="projects-button"
+								onClick={() => {
+									trackAction(
+										"Github",
+										"Cliked Github",
+										"Github"
+									);
+									window.open("https://github.com/walstanb");
+								}}
+							>
+								GitHub &nbsp;
+								<FontAwesomeIcon icon={faChevronRight} />
+							</button>
+							<button
+								className="projects-button"
+								onClick={() => {
+									trackAction(
+										"Github",
+										"Cliked Github Pull Requests",
+										"Github Pull Requests"
+									);
+									window.open(
+										"https://github.com/pulls?q=is%3Apr+author%3Awalstanb+archived%3Afalse+is%3Amerged+sort%3Acomments-desc+"
+									);
+								}}
+							>
+								GitHub Pull Requests &nbsp;
+								<FontAwesomeIcon icon={faChevronRight} />
+							</button>
+						</div>
 
-					<div className="projects-list">
-						<AllProjects />
+						<div className="projects-list">
+							<AllProjects />
+						</div>
 					</div>
-				</div>
-				<div className="page-footer">
-					<Footer />
+					<div className="page-footer">
+						<Footer />
+					</div>
 				</div>
 			</div>
 		</React.Fragment>
