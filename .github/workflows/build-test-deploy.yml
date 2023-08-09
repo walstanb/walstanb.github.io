@@ -1,0 +1,41 @@
+name: "Build, Test and Deploy to live-build"
+on:
+    push:
+        branches:
+            - main
+
+    workflow_dispatch:
+
+jobs:
+    build-test-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: Setup Node
+              uses: actions/setup-node@v2
+
+            - name: Install Dependencies
+              run: npm install
+
+            - name: Build
+              run: npm run build
+
+            - name: Cypress Run Tests
+              if: ${{ !contains(github.event.head_commit.message, '--skip-tests') }}
+              uses: cypress-io/github-action@v5
+              with:
+                  browser: chrome
+                  start: yarn serve build
+                  wait-on: "http://localhost:3000"
+
+            - name: Deploy
+              if: ${{ !contains(github.event.head_commit.message, '--no-deploy') }}
+              uses: crazy-max/ghaction-github-pages@v3
+              with:
+                  target_branch: live-build
+                  build_dir: build
+                  commit_message: "${{ github.event.head_commit.message }}"
+              env:
+                  GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"

@@ -9,8 +9,15 @@ import About from "./pages/about";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";
+import NavBar from "./components/common/navBar.jsx";
+
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
+
+// Initialize Google Analytics
+if (TRACKING_ID) {
+	ReactGA.initialize(TRACKING_ID);
+}
 
 function App() {
 	const location = useLocation();
@@ -34,6 +41,7 @@ function App() {
 			ReactGA.initialize(TRACKING_ID);
 		}
 	}, []);
+	ReactGA.send({ hitType: "pageview", page: location.pathname });
 
 	useEffect(() => {
 		enqueuePageTransition(pagePaths[String(location.pathname)] || 404);

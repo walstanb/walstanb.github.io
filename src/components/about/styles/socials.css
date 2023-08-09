@@ -15,6 +15,16 @@
 	color: var(--secondary-color);
 }
 
+.social:hover .social-text,
+.social:hover .social-icon {
+	color: var(--link-color);
+}
+
+.email-wrapper:hover .social-text,
+.email-wrapper:hover .social-icon {
+	color: var(--link-color);
+}
+
 .social-text {
 	color: var(--secondary-color);
 	padding-left: 30px;

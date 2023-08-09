@@ -7,6 +7,10 @@ import AllProjects from "../components/projects/allProjects";
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
+import { trackAction } from "../components/common/analytics";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
 import "./styles/projects.css";
 
 const Projects = () => {
@@ -34,6 +38,39 @@ const Projects = () => {
 
 					<div className="subtitle projects-subtitle">
 						{INFO.projects.description}
+					</div>
+
+					<div className="projects-buttons">
+						<button
+							className="projects-button"
+							onClick={() => {
+								trackAction(
+									"Github",
+									"Cliked Github",
+									"Github"
+								);
+								window.open("https://github.com/walstanb");
+							}}
+						>
+							GitHub &nbsp;
+							<FontAwesomeIcon icon={faChevronRight} />
+						</button>
+						<button
+							className="projects-button"
+							onClick={() => {
+								trackAction(
+									"Github",
+									"Cliked Github Pull Requests",
+									"Github Pull Requests"
+								);
+								window.open(
+									"https://github.com/pulls?q=is%3Apr+author%3Awalstanb+archived%3Afalse+is%3Amerged+sort%3Acomments-desc+"
+								);
+							}}
+						>
+							GitHub Pull Requests &nbsp;
+							<FontAwesomeIcon icon={faChevronRight} />
+						</button>
 					</div>
 
 					<div className="projects-list">

@@ -46,7 +46,7 @@
 .homepage-image-wrapper {
 	overflow: hidden;
 	border-radius: 10%;
-	transform: rotate(3deg);
+	transform: rotate(2.5deg);
 }
 
 .homepage-image-wrapper img {
@@ -57,7 +57,6 @@
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	padding-top: 30px;
 }
 
 .homepage-social-icon {
@@ -68,7 +67,7 @@
 }
 
 .homepage-social-icon:hover {
-	color: var(--primary-color);
+	color: var(--link-color);
 }
 
 .homepage-after-title {
@@ -82,7 +81,7 @@
 
 .homepage-articles {
 	flex-basis: 70%;
-	padding-top: 30px;
+	padding-top: 20px;
 	margin-left: -30px;
 }
 
@@ -93,6 +92,15 @@
 .homepage-works {
 	flex-basis: 600px;
 	padding-top: 30px;
+}
+
+.homepage-subtitle {
+	min-height: 300px;
+}
+
+.homepage-subtitle span {
+	display: block;
+	padding-bottom: 30px;
 }
 
 @media (max-width: 1024px) {
@@ -130,11 +138,12 @@
 		width: 100% !important;
 		margin-top: 10px;
 		order: 3;
+		min-height: unset;
 	}
 
 	.homepage-first-area-right-side {
 		justify-content: space-around;
-		width: 90%;
+		width: 65%;
 		order: 1;
 	}
 
@@ -144,7 +153,7 @@
 
 	.homepage-socials {
 		width: 90%;
-		margin-left: 18px;
+		margin-left: 5%;
 	}
 
 	.homepage-after-title {
@@ -172,5 +181,17 @@
 @media (max-width: 600px) {
 	.homepage-first-area-right-side {
 		width: 100%;
+	}
+}
+
+@media (max-width: 450px) {
+	.homepage-socials {
+		margin-top: -3%;
+	}
+	.homepage-socials a {
+		width: 15%;
+	}
+	.homepage-social-icon {
+		width: 50%;
 	}
 }

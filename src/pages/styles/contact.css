@@ -28,6 +28,10 @@
 	text-decoration: none;
 }
 
+.contact-subtitle a:hover {
+	color: var(--link-color);
+}
+
 .contact-container {
 	display: flex;
 	flex-direction: column;

@@ -25,7 +25,6 @@
 	--secondary-color: #383636;
 	--tertiary-color: #acacb4;
 	--outline-color: #f0f0f0;
-	--link-color: #00b4d8;
 }
 
 /* Dark mode styles */
@@ -38,5 +37,4 @@
 	--secondary-color: #f8f8f8;
 	--tertiary-color: #868686;
 	--outline-color: #787878;
-	--link-color: #84dbf0;
 }

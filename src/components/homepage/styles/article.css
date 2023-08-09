@@ -1,7 +1,7 @@
 @import "../../../data/styles.css";
 
 .homepage-article {
-	width: 90%;
+	width: 95%;
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	opacity: 0.8;
@@ -14,7 +14,7 @@
 }
 
 .homepage-article-content {
-	padding: 0 30px 30px;
+	padding: 15px 10px 15px 30px;
 }
 
 .homepage-article-date {

@@ -11,16 +11,19 @@ import {
 import INFO from "../../data/user";
 
 import "./styles/socials.css";
+import { trackAction } from "../common/analytics";
 
 const Socials = () => {
 	return (
 		<div className="socials">
-
 			<div className="social">
 				<a
 					href={INFO.socials.linkedin}
 					target="_blank"
 					rel="noreferrer"
+					onClick={() =>
+						trackAction("Socials", "Clicked", "Connect on LinkedIn")
+					}
 				>
 					<div className="social-icon">
 						<FontAwesomeIcon
@@ -33,7 +36,14 @@ const Socials = () => {
 			</div>
 
 			<div className="social">
-				<a href={INFO.socials.discord} target="_blank" rel="noreferrer">
+				<a
+					href={INFO.socials.discord}
+					target="_blank"
+					rel="noreferrer"
+					onClick={() =>
+						trackAction("Socials", "Clicked", "Add me on Discord")
+					}
+				>
 					<div className="social-icon">
 						<FontAwesomeIcon
 							icon={faDiscord}
@@ -45,7 +55,14 @@ const Socials = () => {
 			</div>
 
 			<div className="social">
-				<a href={INFO.socials.github} target="_blank" rel="noreferrer">
+				<a
+					href={INFO.socials.github}
+					target="_blank"
+					rel="noreferrer"
+					onClick={() =>
+						trackAction("Socials", "Clicked", "Follow on GitHub")
+					}
+				>
 					<div className="social-icon">
 						<FontAwesomeIcon
 							icon={faGithub}
@@ -61,6 +78,9 @@ const Socials = () => {
 					href={INFO.socials.instagram}
 					target="_blank"
 					rel="noreferrer"
+					onClick={() =>
+						trackAction("Socials", "Clicked", "Follow on Instagram")
+					}
 				>
 					<div className="social-icon">
 						<FontAwesomeIcon
@@ -78,6 +98,9 @@ const Socials = () => {
 						href={`mailto:${INFO.main.email}`}
 						target="_blank"
 						rel="noreferrer"
+						onClick={() =>
+							trackAction("Socials", "Clicked", "Email")
+						}
 					>
 						<div className="social-icon">
 							<FontAwesomeIcon icon={faEnvelope} />

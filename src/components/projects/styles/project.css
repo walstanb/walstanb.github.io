@@ -88,21 +88,34 @@
 	padding-right: 5px;
 }
 
-@media (max-width: 600px) {
-	.project {
-		height: 450px;
-	}
+@media (max-width: 720px) {
 	.project-container {
-		padding: 0 15px 30px;
+		padding: 10px 40px 40px;
 	}
 
-	.project-description,
 	.project-link {
 		display: none;
 	}
 
-	.project-skill {
-		transform: scale(0.85);
-		padding: 0px;
+	.project-title {
+		text-align: left;
+		font-size: 20px;
+	}
+
+	.project-subtitle {
+		font-size: 16px;
+	}
+
+	.project-description {
+		text-align: justify;
+	}
+
+	.project {
+		background: var(--background-secondary);
+	}
+
+	.project:hover {
+		transition: unset;
+		transform: unset;
 	}
 }

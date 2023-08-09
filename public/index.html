@@ -3,9 +3,33 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%PUBLIC_URL%/favicon.ico?" />
+		<meta property="og:title" content="Walstan Baptista" />
+		<meta property="og:site_name" content="Walstan Baptista" />
+		<meta property="og:type" content="article" />
+		<meta property="og:description" content="Portfolio website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			property="og:image"
+			name="image"
+			content="%PUBLIC_URL%/preview.png"
+		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="theme-color" content="#000000" />
 		<title>Portfolio</title>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-MT635J09JT"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-MT635J09JT");
+		</script>
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>

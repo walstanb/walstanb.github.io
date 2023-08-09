@@ -11,11 +11,15 @@
 
 .footer-links,
 .footer-socials {
-	flex-basis: 25%;
+	flex-basis: 40%;
 }
 
 .footer-links {
 	margin-left: -40px;
+}
+
+.footer-social-icon:hover {
+	color: var(--link-color);
 }
 
 .footer-nav-link-list {

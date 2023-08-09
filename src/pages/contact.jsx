@@ -7,6 +7,7 @@ import ContactForm from "../components/contact/contactForm";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
+import { trackAction } from "../components/common/analytics";
 
 import "./styles/contact.css";
 
@@ -42,6 +43,13 @@ const Contact = () => {
 							href={`mailto:${INFO.main.email}`}
 							target="_blank"
 							rel="noreferrer"
+							onClick={() =>
+								trackAction(
+									"Socials",
+									"Clicked",
+									"Contact Email"
+								)
+							}
 						>
 							{INFO.main.email}
 						</a>{" "}
@@ -53,6 +61,13 @@ const Contact = () => {
 							href={INFO.socials.instagram}
 							target="_blank"
 							rel="noreferrer"
+							onClick={() =>
+								trackAction(
+									"Socials",
+									"Clicked",
+									"ContactInstagram"
+								)
+							}
 						>
 							{"@"}
 							{INFO.socials.instagram.split("/").reverse()[0]}

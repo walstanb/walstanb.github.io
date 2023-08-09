@@ -9,6 +9,7 @@ import {
 	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { trackAction } from "../common/analytics";
 
 import "./styles/footer.css";
 
@@ -38,6 +39,9 @@ const Footer = () => {
 						href={INFO.socials.linkedin}
 						target="_blank"
 						rel="noreferrer"
+						onClick={() =>
+							trackAction("Socials", "Clicked", "Footer LinkedIn")
+						}
 					>
 						<FontAwesomeIcon
 							icon={faLinkedin}
@@ -48,6 +52,9 @@ const Footer = () => {
 						href={INFO.socials.github}
 						target="_blank"
 						rel="noreferrer"
+						onClick={() =>
+							trackAction("Socials", "Clicked", "Footer GitHub")
+						}
 					>
 						<FontAwesomeIcon
 							icon={faGithub}
@@ -58,6 +65,9 @@ const Footer = () => {
 						href={INFO.socials.discord}
 						target="_blank"
 						rel="noreferrer"
+						onClick={() =>
+							trackAction("Socials", "Clicked", "Footer Discord")
+						}
 					>
 						<FontAwesomeIcon
 							icon={faDiscord}
@@ -68,6 +78,13 @@ const Footer = () => {
 						href={INFO.socials.instagram}
 						target="_blank"
 						rel="noreferrer"
+						onClick={() =>
+							trackAction(
+								"Socials",
+								"Clicked",
+								"Footer Instagram"
+							)
+						}
 					>
 						<FontAwesomeIcon
 							icon={faInstagram}
@@ -78,6 +95,9 @@ const Footer = () => {
 						href={`mailto:${INFO.main.email}`}
 						target="_blank"
 						rel="noreferrer"
+						onClick={() =>
+							trackAction("Socials", "Clicked", "Footer Email")
+						}
 					>
 						<FontAwesomeIcon
 							icon={faEnvelope}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import DOMPurify from "dompurify"; // Import dompurify
-
+import { trackAction } from "../common/analytics";
 import "./styles/project.css";
 import skillBadges from "../../data/skillBadges";
 
@@ -19,7 +19,11 @@ const Project = (props) => {
 	return (
 		<React.Fragment>
 			<div className="project">
-				<Link to={link} target="_blank">
+				<Link
+					to={link}
+					target="_blank"
+					onClick={() => trackAction("Project", "Clicked", title)}
+				>
 					<div className="project-image">
 						<img src={image} alt={image_alt} />
 					</div>

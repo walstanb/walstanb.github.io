@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { trackAction } from "../common/analytics";
 
 import "./styles/article.css";
 
@@ -20,7 +21,12 @@ const Article = (props) => {
 						{description}
 					</div>
 					<div className="homepage-article-link">
-						<Link to={link}>
+						<Link
+							to={link}
+							onClick={() =>
+								trackAction("Article", "Clicked", title)
+							}
+						>
 							{link_text}{" "}
 							<FontAwesomeIcon
 								style={{ fontSize: "10px" }}

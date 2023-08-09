@@ -71,4 +71,8 @@
 	.nav-item {
 		font-weight: bold;
 	}
+
+	.nav-list {
+		margin-top: 12px;
+	}
 }
