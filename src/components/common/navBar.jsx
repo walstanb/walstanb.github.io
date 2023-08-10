@@ -5,10 +5,7 @@ import "./styles/darkModeSwitch.css";
 
 import "./styles/navBar.css";
 
-const NavBar = ({ onPageChange, active }) => {
-	const handleNavButtonClick = (nextPageIndex) => {
-		onPageChange(nextPageIndex);
-	};
+const NavBar = ({ active }) => {
 	return (
 		<React.Fragment>
 			<div className="nav-container">
@@ -22,12 +19,7 @@ const NavBar = ({ onPageChange, active }) => {
 										: "nav-item"
 								}
 							>
-								<Link
-									to="/"
-									onClick={() => handleNavButtonClick(0)}
-								>
-									Home
-								</Link>
+								<Link to="/">Home</Link>
 							</li>
 							<li
 								className={
@@ -36,12 +28,7 @@ const NavBar = ({ onPageChange, active }) => {
 										: "nav-item"
 								}
 							>
-								<Link
-									to="/about"
-									onClick={() => handleNavButtonClick(1)}
-								>
-									About
-								</Link>
+								<Link to="/about">About</Link>
 							</li>
 							<li
 								className={
@@ -50,12 +37,7 @@ const NavBar = ({ onPageChange, active }) => {
 										: "nav-item"
 								}
 							>
-								<Link
-									to="/projects"
-									onClick={() => handleNavButtonClick(2)}
-								>
-									Projects
-								</Link>
+								<Link to="/projects">Projects</Link>
 							</li>
 							<li
 								className={
@@ -64,12 +46,7 @@ const NavBar = ({ onPageChange, active }) => {
 										: "nav-item"
 								}
 							>
-								<Link
-									to="/contact"
-									onClick={() => handleNavButtonClick(3)}
-								>
-									Contact
-								</Link>
+								<Link to="/contact">Contact</Link>
 							</li>
 							<li>
 								<div className="dark-mode-switch">

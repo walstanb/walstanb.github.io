@@ -10,7 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const PageTransition = ({ pageIndex }) => {
 	return (
 		<div style={{ position: "relative", width: "100%", height: "100vh" }}>
-			<AnimatePresence initial={true} mode="sync">
+			<AnimatePresence initial={true} mode="out-in">
 				<motion.div
 					key={pageIndex}
 					initial={{ opacity: 0 }}
