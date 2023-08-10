@@ -1,14 +1,10 @@
 import React, { useEffect, useState, useMemo } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import ReactGA from "react-ga4";
 import { ThemeProvider } from "./ThemeContext.js";
 import PageTransition from "./PageTransition";
 import NavBar from "./components/common/navBar.jsx";
-import Homepage from "./pages/homepage";
-import About from "./pages/about";
-import Projects from "./pages/projects";
-import Contact from "./pages/contact";
-import Notfound from "./pages/404";
+import AppRoutes from "./routes.jsx";
 
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
@@ -51,13 +47,7 @@ function App() {
 			<div className="App">
 				<NavBar active={location.pathname} />
 				<PageTransition pageIndex={pageIndex}>
-					<Routes>
-						<Route path="/" element={<Homepage />} />
-						<Route path="/about" element={<About />} />
-						<Route path="/projects" element={<Projects />} />
-						<Route path="/contact" element={<Contact />} />
-						<Route path="*" element={<Notfound />} />
-					</Routes>
+					<AppRoutes />
 				</PageTransition>
 			</div>
 		</ThemeProvider>
