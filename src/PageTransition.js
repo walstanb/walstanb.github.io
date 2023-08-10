@@ -10,7 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const PageTransition = ({ pageIndex }) => {
 	return (
 		<div style={{ position: "relative", width: "100%", height: "100vh" }}>
-			<AnimatePresence initial={false} mode="out-in">
+			<AnimatePresence initial={true} mode="sync">
 				<motion.div
 					key={pageIndex}
 					initial={{ opacity: 0 }}
@@ -19,7 +19,7 @@ const PageTransition = ({ pageIndex }) => {
 					transition={{
 						type: "tween",
 						ease: "easeInOut",
-						duration: 0.8,
+						duration: 0.7,
 					}}
 					style={{
 						position: "absolute",
@@ -29,8 +29,6 @@ const PageTransition = ({ pageIndex }) => {
 						height: "100%",
 					}}
 				>
-					{/* Pass the appropriate page component based on the pageIndex */}
-					{/* For example, you can use a switch statement */}
 					{getPageComponent(pageIndex)}
 				</motion.div>
 			</AnimatePresence>
