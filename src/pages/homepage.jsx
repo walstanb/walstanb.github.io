@@ -157,7 +157,7 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
-							<AllProjects />
+							<AllProjects container_projects_limit={6} />
 						</div>
 
 						<div className="homepage-after-title">
