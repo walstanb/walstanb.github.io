@@ -25,7 +25,10 @@ const Project = (props) => {
 					onClick={() => trackAction("Project", "Clicked", title)}
 				>
 					<div className="project-image">
-						<img src={image} alt={image_alt} />
+						<img
+							src={image || "default_project.gif"}
+							alt={image_alt}
+						/>
 					</div>
 					<div className="project-container">
 						<div className="project-title">{title}</div>

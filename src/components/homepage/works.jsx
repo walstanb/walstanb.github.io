@@ -19,7 +19,10 @@ const Works = () => {
 							<div className="work" key={index}>
 								<div className="work-details">
 									<img
-										src={experience.company_logo}
+										src={
+											experience.company_logo ||
+											"https://static.licdn.com/sc/h/aajlclc14rr2scznz5qm2rj9u"
+										}
 										alt={experience.company}
 										className="work-image"
 									/>
