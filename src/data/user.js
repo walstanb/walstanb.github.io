@@ -25,7 +25,7 @@ const INFO = {
 		title: "About me",
 		description:
 			"Software Engineer with extensive experience delivering efficient, scalable & reliable software solutions. Seeking opportunities as a dev/engineer in fields like Software Development, Automation, AI, and related areas.\n Leadership and team-building qualities.\n Good grasping skills and eagerness to learn new technologies.\n Excellent communication, presentation and interpersonal skills.\n Creative and innovative perspective.\n Flexible, reliable and helpful.\n Fast Learner, efficient and dedicated.",
-		resume: "../Walstan_Baptista.pdf",
+		resume: "../Walstan_Baptista_resume.pdf",
 	},
 
 	projects: {
@@ -33,33 +33,6 @@ const INFO = {
 		description:
 			"Throughout my journey as a developer, I've taken on numerous projects, each of which has contributed to my growth and expertise. What's even more exciting is that a substantial portion of these projects are open-source, providing an excellent opportunity for collaboration and knowledge sharing. I'd be delighted if you could check out these projects and explore the codebase providing your insights and suggestions. I'm always up for a challenge, so if you have a project you want to bring to life, let's make it happen! ",
 		project_list: [
-			{
-				title: "Impact of field-of-view on Monocular Visual SLAM accuracy.",
-				description:
-					"Investigated the impact of camera resolution and field of view on MonoSLAM's precision, providing recommendations for optimal selection in various applications.",
-				image: "https://galeetch.com/images/portfolio/perception_gif.gif",
-				image_alt: "drone flight simulation",
-				skills: [
-					"python",
-					"ros",
-					"opencv",
-					"docker",
-					"linux",
-					"cplusplus",
-				],
-				linkText: "View Project",
-				link: "https://github.com/walstanb/orbslam3_fov/blob/main/Report/Perception_Report.pdf",
-			},
-			{
-				title: "Shravas: Drone Automated Delivery System",
-				description:
-					"Shravas is a project aiming to revolutionize last-mile delivery using quadcopters. It offers speedy and accurate deliveries within cities, overcoming traffic delays and restrictions.",
-				image: "https://github.com/walstanb/shravas/blob/master/demo/sim-video-gif.gif?raw=true",
-				image_alt: "sim-demo",
-				skills: ["python", "ros", "cplusplus", "django", "mysql"],
-				linkText: "View Project",
-				link: "https://github.com/walstanb/shravas",
-			},
 			{
 				title: "Webchat app",
 				description:
@@ -76,6 +49,33 @@ const INFO = {
 				],
 				linkText: "View Project",
 				link: "https://github.com/walstanb/Webchat",
+			},
+			{
+				title: "Shravas: Drone Automated Delivery System",
+				description:
+					"Shravas is a project aiming to revolutionize last-mile delivery using quadcopters. It offers speedy and accurate deliveries within cities, overcoming traffic delays and restrictions.",
+				image: "https://github.com/walstanb/shravas/blob/master/demo/sim-video-gif.gif?raw=true",
+				image_alt: "sim-demo",
+				skills: ["python", "ros", "cplusplus", "django", "mysql"],
+				linkText: "View Project",
+				link: "https://github.com/walstanb/shravas",
+			},
+			{
+				title: "Impact of field-of-view on Monocular Visual SLAM accuracy.",
+				description:
+					"Investigated the impact of camera resolution and field of view on MonoSLAM's precision, providing recommendations for optimal selection in various applications.",
+				image: "https://galeetch.com/images/portfolio/perception_gif.gif",
+				image_alt: "drone flight simulation",
+				skills: [
+					"python",
+					"ros",
+					"opencv",
+					"docker",
+					"linux",
+					"cplusplus",
+				],
+				linkText: "View Project",
+				link: "https://github.com/walstanb/orbslam3_fov/blob/main/Report/Perception_Report.pdf",
 			},
 			{
 				title: "Bidirectional Search",
