@@ -3,7 +3,7 @@ const INFO = {
 		title: "Walstan Baptista",
 		name: "Walstan Baptista",
 		email: "walstanb@gmail.com",
-		logo: "../logo.png",
+		logo: "../images/logo.png",
 	},
 
 	socials: {
