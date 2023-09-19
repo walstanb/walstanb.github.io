@@ -119,7 +119,7 @@ const INFO = {
 			company: "Arizona State University",
 			roles: [
 				{
-					role: "Graduate Research Assistant",
+					role: "Research Assistant",
 					duration: "Jan 2023 - Present",
 					description:
 						"Software tools for formal verification.\nRobustness analysis for python-based Psy-TaLiRo.\nSetup scalable Archcomp automation solution.",
