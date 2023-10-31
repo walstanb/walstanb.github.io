@@ -115,7 +115,7 @@ const INFO = {
 	experience: [
 		{
 			company_logo:
-				"https://media.licdn.com/dms/image/C560BAQHDGjY1IZJuog/company-logo_200_200/0/1519855922217?e=1698278400&v=beta&t=coxQ6Ku_UH2CY3xU2x7_mWze0GjSTByaO2HEltz_raw",
+				"https://media.licdn.com/dms/image/C560BAQHDGjY1IZJuog/company-logo_200_200/0/1519855922217?e=1706745600&v=beta&t=UoiTto0Lslf5M57Sghz_WtNpiXZ2dSl7FFcFZz8z6ic",
 			company: "Arizona State University",
 			roles: [
 				{
@@ -134,7 +134,7 @@ const INFO = {
 		},
 		{
 			company_logo:
-				"https://media.licdn.com/dms/image/C510BAQHO3DgvC3ezeg/company-logo_200_200/0/1559448636267?e=1698278400&v=beta&t=DfWmw7oogu0SHBiW4XDiCdL3F5urdy7iMlyaXnJYKCM",
+				"https://media.licdn.com/dms/image/C510BAQHO3DgvC3ezeg/company-logo_200_200/0/1559448636267?e=1706745600&v=beta&t=9C6ciaIQL6BZOzliDSkJtKif0y_6vKG2HZEIBQyWdAI",
 			company: "Resilient Tech",
 			roles: [
 				{
