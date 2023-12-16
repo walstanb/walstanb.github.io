@@ -61,7 +61,7 @@ describe("About Page", () => {
 		).should("exist");
 		cy.get(".about-main .about-left-side .about-image-container img")
 			.should("have.attr", "src")
-			.should("include", "about.png");
+			.should("include", "profile.jpg");
 
 		cy.get(".about-main .about-left-side .about-skills-container").should(
 			"exist"

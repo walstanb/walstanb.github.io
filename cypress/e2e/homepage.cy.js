@@ -79,7 +79,7 @@ describe("Homepage", () => {
 		cy.get(".homepage-after-title .homepage-articles").should("exist");
 		cy.get(
 			".homepage-after-title .homepage-articles .homepage-article"
-		).should("have.length", 2);
+		).should("have.length", 3);
 		cy.get(".homepage-after-title .homepage-works").should("exist");
 	});
 

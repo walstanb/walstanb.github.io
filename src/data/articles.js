@@ -1,5 +1,23 @@
 const myArticles = [
 	() => ({
+		date: "Oct 18, 2023",
+		title: "ARCH-COMP 2023 Category Report: Falsification",
+		description:
+			"This report presents the results from the 2023 friendly competition in the ARCH workshop for the falsification of temporal logic specifications over Cyber-Physical Systems. We describe the benchmark models selected to compare the tools and the competition settings and provide background on the participating teams and tools. Finally, we present and discuss our results.",
+		keywords: [
+			"ARCH 2023 workshop",
+			"Falsification category",
+			"Metric Temporal Logic (MTL) and Signal Temporal Logic (STL)",
+			"Hybrid systems testing and verification",
+			"Simulation-based approaches",
+			"Benchmark models and requirements",
+			"Pacemaker benchmark mode",
+		],
+		link: "https://easychair.org/publications/paper/wFh9",
+		link_text: "Read Publication",
+	}),
+
+	() => ({
 		date: "9 May 2023",
 		title: "Demo Abstract: Analysing CPS Security with Falsification on the Microsoft Flight Simulator",
 		description:
@@ -12,6 +30,7 @@ const myArticles = [
 		link: "https://dl.acm.org/doi/abs/10.1145/3575870.3589550",
 		link_text: "Read Publication",
 	}),
+
 	() => ({
 		date: "Oct 31, 2020",
 		title: "Simple is better than Complex",

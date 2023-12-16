@@ -115,12 +115,27 @@ const INFO = {
 	experience: [
 		{
 			company_logo:
+				"https://media.licdn.com/dms/image/C560BAQHdAaarsO-eyA/company-logo_200_200/0/1630637844948/apple_logo?e=1710979200&v=beta&t=BP-r0zGPeYn3va56xjzLMhgs62hi-0TvHyT6sWGr3hI",
+			company: "Apple",
+			location: "Austin, Texas",
+			roles: [
+				{
+					role: "Software Engineer (POS)",
+					duration: "Nov 2023 - present",
+					description:
+						"Evaluating, suggesting, and outlining improvements to existing interface flows.\nBuilding and maintaining scalable applications using custom, reusable, and responsive frameworks/ components.",
+				},
+			],
+		},
+		{
+			company_logo:
 				"https://media.licdn.com/dms/image/C560BAQHDGjY1IZJuog/company-logo_200_200/0/1519855922217?e=1706745600&v=beta&t=UoiTto0Lslf5M57Sghz_WtNpiXZ2dSl7FFcFZz8z6ic",
 			company: "Arizona State University",
+			location: "Tempe, Arizona",
 			roles: [
 				{
 					role: "Research Assistant",
-					duration: "Jan 2023 - Present",
+					duration: "Jan 2023 - Nov 2023",
 					description:
 						"Software tools for formal verification.\nRobustness analysis for python-based Psy-TaLiRo.\nSetup scalable Archcomp automation solution.",
 				},
@@ -128,20 +143,21 @@ const INFO = {
 					role: "Application Developer",
 					duration: "May 2022 - Dec 2022",
 					description:
-						"Redesigned SCAD web app with team.\nIntegrated Stripe for secure transactions.\nIntroduced Infrastructure as Code (IaC) principles using Terraform\nImplemented real-time location tracking with Flask-SocketIO.",
+						"Redesigned SCAD web app with team.\nReduced estimated project cost by 15% through comparative analysis of equipment, tools, and technologies.\nImplemented real-time location tracking with Flask-SocketIO.",
 				},
 			],
 		},
 		{
 			company_logo:
-				"https://media.licdn.com/dms/image/C510BAQHO3DgvC3ezeg/company-logo_200_200/0/1559448636267?e=1706745600&v=beta&t=9C6ciaIQL6BZOzliDSkJtKif0y_6vKG2HZEIBQyWdAI",
+				"https://avatars.githubusercontent.com/u/44635598?s=200&v=4",
 			company: "Resilient Tech",
+			location: "Vadodara, India",
 			roles: [
 				{
 					role: "Full Stack Software Engineer",
 					duration: "May 2020 - Aug 2021",
 					description:
-						"Contributed 60+ GitHub PRs, fixing 80+ issues.\nIntegrated Frappe ERPNext with 15+ systems.\nLed 3-member team, migrated apps to AWS/GCP.\nImproved scalability, decreased downtime by 10%.\nCommunicated with clients, provided status updates.",
+						"Contributed 60+ GitHub PRs, fixing 80+ issues.\nIntegrated Frappe ERPNext with 15+ systems.\nImproved scalability, decreased downtime by 10%.\nCommunicated with clients, provided status updates.",
 				},
 				{
 					role: "Software Engineer Intern",

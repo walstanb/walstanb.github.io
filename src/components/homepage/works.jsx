@@ -29,6 +29,9 @@ const Works = () => {
 									<div className="work-title">
 										{experience.company}
 									</div>
+									<div className="work-location">
+										{experience.location}
+									</div>
 									<div className="work-roles">
 										{experience.roles.map(
 											(role, roleIndex) => (

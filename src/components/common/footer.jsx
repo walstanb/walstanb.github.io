@@ -36,15 +36,15 @@ const Footer = () => {
 
 				<div className="footer-socials">
 					<a
-						href={INFO.socials.linkedin}
+						href={`mailto:${INFO.main.email}`}
 						target="_blank"
 						rel="noreferrer"
 						onClick={() =>
-							trackAction("Socials", "Clicked", "Footer LinkedIn")
+							trackAction("Socials", "Clicked", "Footer Email")
 						}
 					>
 						<FontAwesomeIcon
-							icon={faLinkedin}
+							icon={faEnvelope}
 							className="footer-social-icon"
 						/>
 					</a>
@@ -92,15 +92,15 @@ const Footer = () => {
 						/>
 					</a>
 					<a
-						href={`mailto:${INFO.main.email}`}
+						href={INFO.socials.linkedin}
 						target="_blank"
 						rel="noreferrer"
 						onClick={() =>
-							trackAction("Socials", "Clicked", "Footer Email")
+							trackAction("Socials", "Clicked", "Footer LinkedIn")
 						}
 					>
 						<FontAwesomeIcon
-							icon={faEnvelope}
+							icon={faLinkedin}
 							className="footer-social-icon"
 						/>
 					</a>

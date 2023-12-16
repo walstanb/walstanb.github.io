@@ -124,17 +124,25 @@
 	}
 
 	.about-left-side {
-		flex-basis: 100%;
-		order: 1;
+		flex-direction: unset;
+		justify-content: space-around;
+		/* flex-basis: 100%; */
+		/* order: 1; */
 	}
 
 	.about-right-side {
+		padding: 5%;
 		flex-basis: 100%;
 		order: 2;
 	}
 
 	.about-image-container {
-		padding-bottom: 40px;
+		width: 58.5%;
+		/* padding-bottom: 40px; */
+	}
+
+	.about-works {
+		width: 100%;
 	}
 
 	.about-image-wrapper {
@@ -186,10 +194,6 @@
 		padding-left: 15px;
 		padding-right: 15px;
 		margin-top: 0 !important;
-	}
-
-	.about-works {
-		width: 100%;
 	}
 
 	.about-left-side {
