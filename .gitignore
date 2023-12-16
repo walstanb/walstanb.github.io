@@ -8,9 +8,13 @@
 # testing
 /coverage
 /cypress/videos
+/cypress/screenshots
 
 # production
 /build
+
+#auto-generated
+/public/images/meta-preview.png
 
 # misc
 .DS_Store
