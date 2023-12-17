@@ -1,9 +1,8 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  projectId: '2uprbd',
+	projectId: "2uprbd",
 	e2e: {
-		screenshotsFolder: "public/images",
 		experimentalStudio: true,
 		setupNodeEvents(on, config) {
 			on("task", {
