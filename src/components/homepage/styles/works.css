@@ -19,8 +19,9 @@
 	height: 38px;
 	width: 38px;
 	border-radius: 50%;
-	outline: 5px solid var(--content-background-color);
-	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+	/* background: var(--content-background-color); */
+	/* outline: 3px solid var(--content-background-color); */
+	/* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); */
 }
 
 .work-details {
@@ -70,10 +71,10 @@
 }
 
 .work-description ul {
-	list-style-type: disc; /* You can change to 'circle' or 'square' if you prefer different bullet styles */
+	list-style-type: disc;
 	margin-left: 20px;
 	padding-left: 0;
-	padding-top: 15px; /* Remove default padding for the ul element */
+	padding-top: 15px;
 }
 
 .work-description li {
@@ -130,8 +131,8 @@
 	.work-image {
 		height: 25px;
 		width: 25px;
-		box-shadow: unset;
-		outline: 1px solid var(--quaternary-color);
+		/* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); */
+		/* outline: 3px solid var(--content-background-color); */
 	}
 	.work-duration {
 		right: -15px;

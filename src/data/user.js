@@ -17,14 +17,14 @@ const INFO = {
 	homepage: {
 		title: "Software Engineer, and AI enthusiast",
 		description:
-			"Hi, I'm Walstan, a software engineer who loves creating efficient and reliable solutions to complex problems. I'm always looking for new challenges to expand my knowledge and skills, and I enjoy keeping up with the latest developments in AI. I'm pretty good with advanced tools like containerization and cloud technology, which helps me create cutting-edge and innovative solutions. When I'm not in the zone, I like to explore new destinations for a hike, game, or maybe try out a new recipe. I'm always eager to take on new challenges and grow both professionally and personally.",
+			"Hi, I'm Walstan, a software engineer who loves creating efficient and reliable solutions to complex problems. I'm always looking out for new challenges to expand my knowledge and skills, and I enjoy keeping up with the latest developments in AI. I'm pretty good with advanced tools like containerization and cloud technology, which helps me create cutting-edge and innovative solutions. When I'm not in the zone, I like to explore new destinations for a hike, game, or maybe try cooking a new recipe. I'm always eager to take on new challenges and grow both personally and professionally.",
 		// "As a software engineer, I strive to deliver software solutions that are efficient, scalable, and reliable. I am enthusiastic about embracing new challenges and technologies. When I'm not writing code, I enjoy keeping up with the latest advances in AI. I am skilled in working with cutting-edge tools, from databases to the cloud, to drive innovation. When I'm not working, I like to hike, game, and explore new places. I am constantly seeking new challenges to improve my skills as an individual.",
 	},
 
 	about: {
 		title: "About me",
 		description:
-			"Software Engineer with extensive experience delivering efficient, scalable & reliable software solutions. Seeking opportunities as a dev/engineer in fields like Software Development, Automation, AI, and related areas.\n Leadership and team-building qualities.\n Good grasping skills and eagerness to learn new technologies.\n Excellent communication, presentation and interpersonal skills.\n Creative and innovative perspective.\n Flexible, reliable and helpful.\n Fast Learner, efficient and dedicated.",
+			"Software Engineer with extensive experience delivering efficient, scalable & reliable software solutions. Seeking opportunities as a dev/engineer in fields like Software Development, Automation, and AI.\n Leadership and team-building qualities.\n Good grasping skills and eager to learn new technologies.\n Excellent communication, presentation and interpersonal skills.\n Creative and innovative perspective.\n Flexible, reliable and helpful.\n Fast Learner, efficient and dedicated.",
 		resume: "../Walstan_Baptista_resume.pdf",
 	},
 

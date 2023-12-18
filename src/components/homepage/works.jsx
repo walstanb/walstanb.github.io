@@ -75,7 +75,7 @@ const Works = () => {
 							</div>
 						))}
 						<button
-							className="works-button access-resume-button"
+							className="works-button access-resume-button disabled"
 							onClick={() => {
 								trackAction(
 									"Resume",

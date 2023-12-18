@@ -17,6 +17,15 @@
 	background-color: rgb(0, 0, 0);
 }
 
+.disabled {
+	color: var(--outline-color);
+	pointer-events: none;
+}
+
+.disabled:hover {
+	cursor: not-allowed;
+}
+
 .page-content {
 	background-color: var(--content-background-color);
 	position: relative;
