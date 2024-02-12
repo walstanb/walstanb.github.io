@@ -114,8 +114,7 @@ const INFO = {
 
 	experience: [
 		{
-			company_logo:
-				"https://media.licdn.com/dms/image/C560BAQHdAaarsO-eyA/company-logo_200_200/0/1630637844948/apple_logo?e=1710979200&v=beta&t=BP-r0zGPeYn3va56xjzLMhgs62hi-0TvHyT6sWGr3hI",
+			company_logo: "images/apple_logo.jpg",
 			company: "Apple",
 			location: "Austin, Texas",
 			roles: [
@@ -128,8 +127,7 @@ const INFO = {
 			],
 		},
 		{
-			company_logo:
-				"https://media.licdn.com/dms/image/C560BAQHDGjY1IZJuog/company-logo_200_200/0/1519855922217?e=1706745600&v=beta&t=UoiTto0Lslf5M57Sghz_WtNpiXZ2dSl7FFcFZz8z6ic",
+			company_logo: "images/1631309406468.jpg",
 			company: "Arizona State University",
 			location: "Tempe, Arizona",
 			roles: [
@@ -148,8 +146,7 @@ const INFO = {
 			],
 		},
 		{
-			company_logo:
-				"https://avatars.githubusercontent.com/u/44635598?s=200&v=4",
+			company_logo: "images/44635598.png",
 			company: "Resilient Tech",
 			location: "Vadodara, India",
 			roles: [
