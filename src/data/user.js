@@ -64,7 +64,7 @@ const INFO = {
 				title: "Impact of field-of-view on Monocular Visual SLAM accuracy.",
 				description:
 					"Investigated the impact of camera resolution and field of view on MonoSLAM's precision, providing recommendations for optimal selection in various applications.",
-				image: "https://galeetch.com/images/portfolio/perception_gif.gif",
+				image: "images/perception_gif.gif",
 				image_alt: "drone flight simulation",
 				skills: [
 					"python",
@@ -122,7 +122,7 @@ const INFO = {
 					role: "Software Engineer (POS)",
 					duration: "Nov 2023 - present",
 					description:
-						"Evaluating, suggesting, and outlining improvements to existing interface flows.\nBuilding and maintaining scalable applications using custom, reusable, and responsive frameworks/ components.",
+						"Partnering cross-functionally to strengthen Apple Store sales systems and resiliency.\nDeploying global resilientservice workflows with fallbacks across 500+ stores.\nBuilt AI-driven recommendation engine with Redis caching, cutting quoting time 53%.\nEnhancing checkout with idempotency, retries, and circuit-breakers, eliminating peak failures."
 				},
 			],
 		},
