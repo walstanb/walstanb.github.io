@@ -1,70 +1,83 @@
 import "./styles/darkModeSwitch.css";
-import React, { useContext, useEffect, useRef, useMemo } from "react";
+import React, { useContext, useEffect, useRef, useMemo, useCallback } from "react";
 import { ThemeContext } from "../../ThemeContext";
 import { trackAction } from "./analytics";
 
 const DarkModeSwitch = () => {
 	const { isDarkMode, setIsDarkMode } = useContext(ThemeContext);
 	const darkModeSwitchRef = useRef(null);
-	const audioUp = useMemo(() => {
-		return new Audio("/sfx/up.wav");
+	const lastSoundTimeRef = useRef(0);
+	const queuedSoundRef = useRef(null);
+	
+	const audioUp = useMemo(() => new Audio("/sfx/up.wav"), []);
+	const audioDown = useMemo(() => new Audio("/sfx/down.wav"), []);
+	
+	const playSound = useCallback((audio) => {
+		const now = Date.now();
+		
+		if (now - lastSoundTimeRef.current > 200) {
+			audio.currentTime = 0;
+			audio.play().catch(console.error);
+			lastSoundTimeRef.current = now;
+			
+			if (queuedSoundRef.current) {
+				clearTimeout(queuedSoundRef.current);
+				queuedSoundRef.current = null;
+			}
+		} else {
+			const timeUntilNext = 150 - (now - lastSoundTimeRef.current);
+			
+			if (queuedSoundRef.current) {
+				clearTimeout(queuedSoundRef.current);
+			}
+			
+			queuedSoundRef.current = setTimeout(() => {
+				audio.currentTime = 0;
+				audio.play().catch(console.error);
+				lastSoundTimeRef.current = Date.now();
+				queuedSoundRef.current = null;
+			}, timeUntilNext);
+		}
 	}, []);
-	const audioDown = useMemo(() => {
-		return new Audio("/sfx/down.wav");
-	}, []);
-	// Function to toggle dark mode
-	const toggleDarkMode = () => {
-		setIsDarkMode((prevDarkMode) => !prevDarkMode);
-	};
+	
+	const toggleDarkMode = () => setIsDarkMode(prev => !prev);
 
 	useEffect(() => {
-		const preloadAudio = () => {
-			audioUp.load();
-			audioDown.load();
+		audioUp.load();
+		audioDown.load();
+		
+		return () => {
+			if (queuedSoundRef.current) {
+				clearTimeout(queuedSoundRef.current);
+			}
 		};
-		preloadAudio();
 	}, [audioDown, audioUp]);
 
 	useEffect(() => {
-		const handleMouseUp = (event) => {
-			if (
-				darkModeSwitchRef.current &&
-				!darkModeSwitchRef.current.contains(event.target)
-			)
-				return;
-			(isDarkMode ? audioDown : audioUp).play();
-		};
-
-		document.addEventListener("mouseup", handleMouseUp);
-
-		return () => {
-			document.removeEventListener("mouseup", handleMouseUp);
-		};
-	}, [isDarkMode, audioDown, audioUp]);
-
-	useEffect(() => {
 		const handleMouseDown = (event) => {
-			if (
-				darkModeSwitchRef.current &&
-				!darkModeSwitchRef.current.contains(event.target)
-			)
-				return;
-
-			(isDarkMode ? audioUp : audioDown).play();
+			if (darkModeSwitchRef.current?.contains(event.target)) {
+				playSound(isDarkMode ? audioUp : audioDown);
+			}
 		};
 
 		document.addEventListener("mousedown", handleMouseDown);
+		return () => document.removeEventListener("mousedown", handleMouseDown);
+	}, [isDarkMode, audioDown, audioUp, playSound]);
 
-		return () => {
-			document.removeEventListener("mousedown", handleMouseDown);
+	useEffect(() => {
+		const handleMouseUp = (event) => {
+			if (darkModeSwitchRef.current?.contains(event.target)) {
+				playSound(isDarkMode ? audioDown : audioUp);
+			}
 		};
-	}, [isDarkMode, audioDown, audioUp]);
+
+		document.addEventListener("mouseup", handleMouseUp);
+		return () => document.removeEventListener("mouseup", handleMouseUp);
+	}, [isDarkMode, audioDown, audioUp, playSound]);
 
 	return (
 		<div
-			className={`dark-mode-switch ${
-				isDarkMode ? "dark-mode" : "light-mode"
-			}`}
+			className={`dark-mode-switch ${isDarkMode ? "dark-mode" : "light-mode"}`}
 			ref={darkModeSwitchRef}
 		>
 			<input
@@ -72,13 +85,7 @@ const DarkModeSwitch = () => {
 				id="darkModeToggle"
 				checked={isDarkMode}
 				onChange={toggleDarkMode}
-				onClick={() =>
-					trackAction(
-						"Dark Mode Switch",
-						"Clicked",
-						"Dark Mode Toggle"
-					)
-				}
+				onClick={() => trackAction("Dark Mode Switch", "Clicked", "Dark Mode Toggle")}
 			/>
 			<label htmlFor="darkModeToggle">
 				<span className="switch" />
