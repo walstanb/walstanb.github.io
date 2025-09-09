@@ -24,8 +24,8 @@ const INFO = {
 	about: {
 		title: "About me",
 		description:
-			"Software Engineer with extensive experience delivering efficient, scalable & reliable software solutions. Seeking opportunities as a dev/engineer in fields like Software Development, Automation, and AI.\n Leadership and team-building qualities.\n Good grasping skills and eager to learn new technologies.\n Excellent communication, presentation and interpersonal skills.\n Creative and innovative perspective.\n Flexible, reliable and helpful.\n Fast Learner, efficient and dedicated.",
-		resume: "../Walstan_Baptista_resume.pdf",
+			"Software Engineer with extensive experience delivering efficient, scalable & reliable software solutions. Seeking opportunities as a dev/engineer in fields like Software Development, Automation, AI, and related areas.\n Leadership and team-building qualities.\n Good grasping skills and eagerness to learn new technologies.\n Excellent communication, presentation and interpersonal skills.\n Creative and innovative perspective.\n Flexible, reliable and helpful.\n Fast Learner, efficient and dedicated.",
+		resume: "../Walstan_Baptista_Resume.pdf",
 	},
 
 	projects: {
