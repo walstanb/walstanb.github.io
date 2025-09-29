@@ -2,7 +2,6 @@
 
 .works-body {
 	position: relative;
-	margin-bottom: 20px;
 	top: -10px;
 }
 
@@ -84,35 +83,47 @@
 }
 
 .works-button {
-	position: absolute;
-	outline: 2px solid var(--outline-color);
-	background-color: var(--context-background-color);
-	color: var(--secondary-color);
-	border: none;
-	padding: 10px 15px;
-	border-radius: 30px;
-	font-size: 14px;
-	cursor: pointer;
-	max-height: 35px;
-	overflow: hidden;
-	/* box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25); */
+    outline: 2px solid var(--outline-color);
+    background-color: var(--context-background-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    max-height: 35px;
+    overflow: hidden;
+    /* box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25); */
 }
 
-.works-button:hover {
+.works-button:not(:disabled):hover {
 	outline-color: var(--link-color);
 	color: var(--link-color);
 	transition: outline-color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 }
 
-.access-resume-button {
-	bottom: -25px;
-	right: -10px;
+/* Prevent hover styles when disabled */
+.works-button:disabled:hover {
+    outline-color: var(--outline-color);
+    color: var(--tertiary-color);
 }
 
-.ghpr-button {
-	bottom: -25px;
-	right: 90px;
+/* Disabled state */
+.works-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+    outline-color: var(--outline-color);
+	color: var(--tertiary-color);
+}
+
+.works-buttons-row {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 /* Existing CSS... */
