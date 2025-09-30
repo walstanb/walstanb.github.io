@@ -32,7 +32,7 @@ const Contact = () => {
 				<div className="content-wrapper page-4">
 					<div className="contact-container">
 						<div className="title contact-title">
-							You wanna get in touch? Me too!
+							Wanna get in touch? Me too!
 						</div>
 
 						<div className="subtitle contact-subtitle">
