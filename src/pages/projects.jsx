@@ -65,7 +65,7 @@ const Projects = () => {
 										"Github Pull Requests"
 									);
 									window.open(
-										"https://github.com/pulls?q=is%3Apr+author%3Awalstanb+archived%3Afalse+is%3Amerged+sort%3Acomments-desc+"
+										"https://github.com/search?q=is%3Apr+author%3Awalstanb+archived%3Afalse+is%3Amerged+sort%3Acomments-desc+&type=pullrequests"
 									);
 								}}
 							>
