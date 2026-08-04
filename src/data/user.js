@@ -157,13 +157,7 @@ const INFO = {
 					duration: "May 2020 - Aug 2021",
 					description:
 						"Contributed 60+ GitHub PRs, fixing 80+ issues.\nIntegrated Frappe ERPNext with 15+ systems.\nImproved scalability, decreased downtime by 10%.\nCommunicated with clients, provided status updates.",
-				},
-				{
-					role: "Software Engineer Intern",
-					duration: "Jan 2020 - May 2020",
-					description:
-						"Built 25+ forms, reports, and dashboards creatively.\nIntegrated Frappe with HTML, CSS, JavaScript seamlessly.\nAutomated processes, enhanced data accessibility, decision-making.",
-				},
+				}
 			],
 		},
 	],
